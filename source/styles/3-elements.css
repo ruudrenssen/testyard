@@ -1,0 +1,5 @@
+body {
+	--line-height: var(--factor);
+
+	font: normal var(--weight-regular) normal var(--size)/var(--line-height) var(--font-family);
+}

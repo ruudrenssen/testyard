@@ -1,0 +1,6 @@
+.section-text {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10vh 10vw;
+    gap: var(--size);
+}

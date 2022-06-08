@@ -8,10 +8,20 @@ table, form {
 
 h1 {
     font-weight: var(--weight-bold);
+    font-size: var(--size-xxl);
 }
 
 h2, h3, h4, h5, h6 {
     font-weight: var(--weight-medium);
+    font-size: var(--size);
+}
+
+h2 {
+    font-size: var(--size-xl);
+}
+
+h3 {
+    font-size: var(--size-l);
 }
 
 strong {

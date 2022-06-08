@@ -9,16 +9,16 @@
 	--weight-medium: 600;
 	--weight-bold: 800;
 
-	font-size: clamp(0.875rem, 1vw, 1.25rem)
+	--size: clamp(0.875rem, 1.125vw, 1.125rem);
+	--size-s: calc(var(--factor) / var(--size));
+	--size-l: calc(var(--factor) * var(--size));
+	--size-xl: calc(var(--factor) * var(--size-l));
+	--size-xxl: calc(var(--factor) * var(--size-xl));
+
+	font-size: var(--size);
 }
 
 * {
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	--line-height: var(--factor);
-
-	font: normal var(--weight-regular) normal 1rem/var(--line-height) var(--font-family);
 }
