@@ -1,10 +1,5 @@
 body {
-	display: grid;
-	grid-template-rows: auto;
+	--line-height: var(--factor);
 
-	background-color: var(--color);
-
-	& main {
-		background-color: var(--light);
-	}
+	font: normal var(--weight-regular) normal var(--size)/var(--line-height) var(--font-family);
 }
