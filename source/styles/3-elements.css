@@ -1,0 +1,10 @@
+body {
+	display: grid;
+	grid-template-rows: auto;
+
+	background-color: var(--color);
+
+	& main {
+		background-color: var(--light);
+	}
+}
