@@ -1,3 +1,6 @@
-const experiments = [{ name: 'a1' }, { name: 'a2' }, { name: 'a3' }];
+const experiments = [
+    { name: 'Table experiment', route: 'table' },
+    { name: 'Typography experiment', route: 'typography' }
+];
 
 module.exports = { experiments };

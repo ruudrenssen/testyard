@@ -1,9 +1,7 @@
 <h1>Experiments</h1>
 
-<a href="experiments/table">Table</a>
-
 <ol>
 	{{#each experiments}}
-		<li>{{ name }}</li>
+		<li><a href="experiments/{{ route }}">{{ name }}</a></li>
 	{{/each}}
 </ol>
