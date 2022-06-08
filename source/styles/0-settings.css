@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&display=swap');
+
 :root {
-	--color: #eee;
-	--light: #fff;
-	--dark: #111;
-	--alt-color: #00f;
+	--factor: 1.38;
+
+	--font-family: 'DM Sans', sans-serif;
+
+	--weight-regular: 400;
+	--weight-medium: 600;
+	--weight-bold: 800;
+
+	font-size: clamp(0.875rem, 1vw, 1.25rem)
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	--line-height: var(--factor);
+
+	font: normal var(--weight-regular) normal 1rem/var(--line-height) var(--font-family);
 }

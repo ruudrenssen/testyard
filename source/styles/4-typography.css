@@ -1,0 +1,19 @@
+body {
+    font-variant-numeric: oldstyle-nums;
+}
+
+table, form {
+	font-variant-numeric: tabular-nums;
+}
+
+h1 {
+    font-weight: var(--weight-bold);
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: var(--weight-medium);
+}
+
+strong {
+    font-weight: var(--weight-medium);
+}
