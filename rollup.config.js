@@ -1,10 +1,20 @@
+import commonjs from '@rollup/plugin-commonjs';
+import { babel } from '@rollup/plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
+// import { terser } from 'rollup-plugin-terser';
 
 export default {
-    input: './source/js/index.mjs',
-    output: {
-        file: './public/index.mjs',
-        format: 'esm'
-    },
-    plugins: [nodeResolve()]
-}
+	input: 'source/scripts/index.mjs',
+	output: {
+		file: 'static/js/main.mjs',
+		format: 'esm',
+	},
+	plugins: [
+		commonjs(),
+		nodeResolve(),
+		babel({
+			babelHelpers: 'bundled',
+		}),
+		// terser(),
+	],
+};

@@ -1,0 +1,20 @@
+- minify css
+- browser support css (fancy features, css next)
+
+minify css
+- done, maar wat zijn eigenlijk options die je vaak gebruikt?
+
+browser support css (fancy features, css next)
+- was op zoek naar hoe ik naar ik de browserlist kon koppelen (via path ofzo)
+- ik heb de browserlist van TG gejat, daar zit nl legacy support in en hoewel ik daar liever niet mee deal, moet ik dat ook leren
+- specifieke reden waarom je autoprefixer hernoemt?
+- syntax highting doet beetje gek (bij require in portcss config); what up daarmee?
+
+
+todo:
+- module loader
+
+
+
+toekomstmuziek:
+- commonJS (twee bundles voor browser support)

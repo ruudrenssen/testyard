@@ -1,45 +1,49 @@
 {
-  "name": "testyard",
-  "version": "1.0.0",
-  "description": "repo to test stuff out",
-  "main": "public/index.mjs",
+  "name": "giftshop",
+  "version": "0.1.0",
+  "description": "a NodeJS giftshop",
   "scripts": {
+    "start": "npm run server",
+    "dev": "run-p watch",
+    "server": "node ./app",
+    "clean": "npx rimraf ./static/**/*",
+    "lint": "run-p lint:*",
+    "lint:scripts": "eslint ./app --ext js,json --fix",
+    "lint:styles": "stylelint ./source/styles/**/*.css",
+    "prebuild": "echo 'start prebuild' && run-p lint clean",
     "build": "run-p build:*",
     "build:scripts": "rollup --config",
-    "build:styles": "postcss ./source/css/index.css --verbose --output ./public/styles.css",
-    "build:static": "shx cp ./source/static/* ./public",
-    "clean": "shx rm -rf ./public/* ",
-    "dev": "npm run clean & concurrently 'npm:build' 'npm:watch' 'npm:host'",
-    "host": "npx http-server --port 8080 -c-1",
+    "build:styles": "postcss ./source/styles/main.css --verbose --output ./static/css/main.css",
     "watch": "run-p watch:*",
     "watch:scripts": "npm run build:scripts -- --watch",
-    "watch:styles": "npm run build:styles -- --watch"
+    "watch:styles": "npm run build:styles -- --watch",
+    "watch:server": "nodemon ./app"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ruudrenssen/testyard.git"
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "lodash.debounce": "^4.0.8"
   },
-  "author": "Ruud Renssen",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/ruudrenssen/testyard/issues"
-  },
-  "homepage": "https://github.com/ruudrenssen/testyard#readme",
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "concurrently": "^7.1.0",
-    "eslint": "^8.12.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "http-server": "^14.1.0",
+    "@babel/preset-env": "^7.14.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "core-js": "^3.11.1",
+    "eslint": "^7.25.0",
+    "eslint-config-vi": "^11.0.0",
+    "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.12",
-    "postcss-cli": "^9.1.0",
-    "postcss-csso": "^6.0.0",
-    "postcss-import": "^14.1.0",
-    "postcss-preset-env": "^7.4.3",
-    "rollup": "^2.70.1",
-    "shelljs": "^0.8.5",
-    "shx": "^0.3.4"
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.2.0",
+    "postcss-csso": "^5.0.1",
+    "postcss-import": "^14.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "rollup": "^2.46.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "stylelint": "^13.13.0",
+    "stylelint-config-vi": "^2.0.1"
   }
 }

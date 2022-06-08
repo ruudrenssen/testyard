@@ -1,1 +1,0 @@
-{"version":3,"sources":["../source/css/0-settings.css"],"names":[],"mappings":"AAAA,MACI,uDACJ,CAEA,EACI,mBACJ","file":"styles.css","sourcesContent":[":root {\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n\r\n* {\r\n    font-family: inherit;\r\n}"]}
