@@ -2,7 +2,7 @@
   "name": "testyard",
   "version": "1.0.0",
   "description": "repo to test stuff out",
-  "main": "app/index.mjs",
+  "main": "public/index.mjs",
   "scripts": {
     "build": "run-p build:*",
     "build:scripts": "rollup --config",
