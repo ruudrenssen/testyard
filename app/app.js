@@ -3,8 +3,8 @@ const path = require('path'); // native node
 const express = require('express'); // packages
 const exphbs = require('express-handlebars');
 
-const dashboardRouter = require('./components/dashboard/dashboard.router');
-const experimentsRouter = require('./components/experiments/experiments.router');
+const dashboardRouter = require('./views/dashboard/dashboard.router');
+const experimentsRouter = require('./views/experiments/experiments.router');
 
 const app = express();
 
