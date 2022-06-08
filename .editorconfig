@@ -7,7 +7,7 @@ indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[**.{config,xml,json,yml}]
+[**.{config,xml,json,yml,js,mjs}]
 indent_style = space
 indent_size = 2
 

@@ -4,7 +4,7 @@ const express = require('express'); // packages
 const exphbs = require('express-handlebars');
 
 const dashboardRouter = require('./components/dashboard/dashboard.router');
-const productsRouter = require('./components/products/products.router');
+const experimentsRouter = require('./components/experiments/experiments.router');
 
 const app = express();
 
@@ -15,6 +15,6 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 app.use('/', dashboardRouter); // routes
-app.use('/products', productsRouter); // routes
+app.use('/experiments', experimentsRouter); // routes
 
 module.exports = app;
