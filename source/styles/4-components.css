@@ -3,4 +3,9 @@
     flex-flow: column nowrap;
     padding: 10vh 10vw;
     gap: var(--size);
+    place-items: flex-start;
+}
+
+.overflow {
+    overflow: auto;
 }

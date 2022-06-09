@@ -1,5 +1,7 @@
 body {
-	--line-height: var(--factor);
-
-	font: normal var(--weight-regular) normal var(--size)/var(--line-height) var(--font-family);
+	--color-whitespace: hsl(var(--color-white));
+	--color-element: hsl(var(--color-black));
+	
+	--border-color: var(--color-element);
+	--border-size: var(--stroke);
 }
