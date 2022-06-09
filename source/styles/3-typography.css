@@ -6,14 +6,14 @@ table, form {
 	font-variant-numeric: tabular-nums;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--weight-medium);
+    font-size: var(--size);
+}
+
 h1 {
     font-weight: var(--weight-bold);
     font-size: var(--size-xxl);
-}
-
-h2, h3, h4, h5, h6 {
-    font-weight: var(--weight-medium);
-    font-size: var(--size);
 }
 
 h2 {
