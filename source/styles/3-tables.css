@@ -1,0 +1,39 @@
+table {
+    --cell-spacing: var(--size-l);
+    --row-height: var(--size-xl);
+    --header-color: var(--color-spot-1);
+    --text-color: var(--color-black);
+    
+    --color-alt: hsla(var(--text-color), var(--shadow-light));
+    
+    font: normal normal var(--weight-regular) var(--size)/var(--row-height) var(--family-mono);
+    font-variant-numeric: tabular-nums;
+}
+
+caption {
+    caption-side: bottom;
+
+    padding-right: calc(var(--cell-spacing) / 2);
+    
+    font-family: var(--family-narrow);
+    font-size: var(--size-s);
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-alt);
+}
+
+th, td {
+    text-align: right;
+    padding: 0 calc(var(--cell-spacing) / 2);
+}
+
+th {
+    font-family: var(--family-narrow);
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
