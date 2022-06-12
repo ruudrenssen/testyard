@@ -6,7 +6,7 @@ table {
     
     --color-alt: hsla(var(--text-color), var(--shadow-light));
     
-    font: normal normal var(--weight-regular) var(--size)/var(--row-height) var(--family-mono);
+    font: normal normal var(--weight) var(--size)/var(--row-height) var(--family-mono);
     font-variant-numeric: tabular-nums;
 }
 
