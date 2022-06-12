@@ -1,29 +1,20 @@
-body {
-    font-variant-numeric: oldstyle-nums;
-}
-
-table, form {
-	font-variant-numeric: tabular-nums;
-}
-
 h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--weight-medium);
-    font-size: var(--size);
+    --weight: var(--weight-semibold);
 }
 
 h1 {
-    font-weight: var(--weight-bold);
-    font-size: var(--size-xxl);
+    --size: var(--size-xxl);
+    --weight: var(--weight-bold);
 }
 
 h2 {
-    font-size: var(--size-xl);
+    --size: var(--size-xl);
 }
 
 h3 {
-    font-size: var(--size-l);
+    --size: var(--size-l);
 }
 
 strong {
-    font-weight: var(--weight-medium);
+    --weight: var(--weight-medium);
 }
