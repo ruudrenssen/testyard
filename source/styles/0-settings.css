@@ -3,19 +3,19 @@
 :root {
 	--factor: 1.38;
 
-	--family-default: 'IBM Plex Sans', sans-serif;
+	--family: 'IBM Plex Sans', sans-serif;
 	--family-mono: 'IBM Plex Mono', monospace;
 	--family-narrow: 'IBM Plex Sans Condensed', sans-serif;
 
 	--weight-thin: 100;
 	--weight-extralight: 200;
 	--weight-light: 300;
-	--weight-regular: 400;
+	--weight: 400;
 	--weight-medium: 500;
 	--weight-semibold: 600;
 	--weight-bold: 700;
 
-	--size: clamp(0.925rem, 1.125vw, 1.125rem);
+	--size: clamp(0.925em, 1.125vw, 1.125em);
 	--size-s: calc(var(--size) / var(--factor));
 	--size-l: calc(var(--factor) * var(--size));
 	--size-xl: calc(var(--factor) * var(--size-l));
@@ -39,6 +39,8 @@
 * {
 	margin: 0;
 	padding: 0;
+
+	font: normal normal var(--weight) var(--size)/var(--factor) var(--family);
 
 	font-variant-numeric: inherit;
 }

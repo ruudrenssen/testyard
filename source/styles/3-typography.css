@@ -1,25 +1,10 @@
-body {
-    --line-height: var(--factor);
-
-	font: normal normal var(--weight-regular) var(--size)/var(--line-height) var(--family-default);
-    font-variant-numeric: oldstyle-nums;
-}
-
 h1, h2, h3, h4, h5, h6 {
-    --size: var(--size);
     --weight: var(--weight-semibold);
-    
-    font-size: var(--size);
-    font-weight: var(--weight);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-size: var(--size);
 }
 
 h1 {
-    --weight: var(--weight-bold);
     --size: var(--size-xxl);
+    --weight: var(--weight-bold);
 }
 
 h2 {
@@ -31,27 +16,5 @@ h3 {
 }
 
 strong {
-    font-weight: var(--weight-medium);
-}
-
-table, form {
-	font-variant-numeric: tabular-nums;
-}
-
-a {
-    position: relative;
-}
-
-a[href^="http"]:hover:after,
-a[href^="www"]:hover:after {
-    content: attr(href);
-    
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    padding: var(--size-s);
-
-    background-color: var(--color-negative);
+    --weight: var(--weight-medium);
 }
