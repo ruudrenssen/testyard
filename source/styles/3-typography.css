@@ -51,9 +51,7 @@ a[href^="www"]:hover:after {
     top: 100%;
     left: 0;
 
-    padding: var(--space);
+    padding: var(--size-s);
 
-    background-color: var(--color-whitespace);
-
-    border: var(--border-size) solid var(--border-color);
+    background-color: var(--color-negative);
 }
