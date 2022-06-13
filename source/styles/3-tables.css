@@ -7,25 +7,19 @@ table {
     --color-alt: hsla(var(--text-color), var(--shadow-light));
     
     font: normal normal var(--weight) var(--size)/var(--row-height) var(--family-mono);
-    font-variant-numeric: tabular-nums;
+    text-align: right;
 }
 
 caption {
     caption-side: bottom;
 
     padding-right: calc(var(--cell-spacing) / 2);
-    
-    font-family: var(--family-narrow);
-    font-size: var(--size-s);
-    text-align: right;
-}
 
-tbody tr:nth-child(odd) {
-    background-color: var(--color-alt);
+    font: normal normal var(--weight) var(--size-s)/var(--line-height) var(--family-narrow);
+    text-align: right;
 }
 
 th, td {
-    text-align: right;
     padding: 0 calc(var(--cell-spacing) / 2);
 }
 
@@ -33,7 +27,14 @@ th {
     font-family: var(--family-narrow);
 }
 
-th:first-child,
-td:first-child {
+td {
+    font-variant-numeric: tabular-nums;
+}
+
+th[scope="row"] {
     text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-alt);
 }

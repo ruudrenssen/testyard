@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 :root {
+	/* Primatives */
 	--factor: 1.38;
 
 	--family: 'IBM Plex Sans', sans-serif;
@@ -17,9 +16,9 @@
 
 	--size: clamp(0.925em, 1.125vw, 1.125em);
 	--size-s: calc(var(--size) / var(--factor));
-	--size-l: calc(var(--factor) * var(--size));
-	--size-xl: calc(var(--factor) * var(--size-l));
-	--size-xxl: calc(var(--factor) * var(--size-xl));
+	--size-l: calc(var(--size) * var(--factor));
+	--size-xl: calc(var(--size-l) * var(--factor));
+	--size-xxl: calc(var(--size-xl) * var(--factor));
 
 	--stroke-s: 1px;
 	--stroke: 2px;
@@ -33,7 +32,22 @@
 	--shadow-normal: 50%;
 	--shadow-heavy: 85%;
 
+	/* Properties */
+	--color-text: hsl(var(--color-white));
+	--color-background: hsl(var(--color-black));
+	--color-action: hsl(var(--color-spot-1));
+	
+	--border-color: var(--color-background);
+	--border-size: var(--stroke);
+	--border-style: solid;
+
+	--line-height: var(--factor);
+
 	font-size: var(--size);
+
+	/* Compososed properties */
+	--border: var(--border-size) var(--border-style) var(--border-color);
+	--font: normal normal var(--weight) var(--size)/var(--factor) var(--family);
 }
 
 * {
@@ -41,6 +55,4 @@
 	padding: 0;
 
 	font: normal normal var(--weight) var(--size)/var(--factor) var(--family);
-
-	font-variant-numeric: inherit;
 }

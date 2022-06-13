@@ -1,11 +1,5 @@
 body {
-	--color-negative: hsl(var(--color-white));
-	--color-positive: hsl(var(--color-black));
-	--color-action: hsl(var(--color-spot-1));
-	
-	--border-color: var(--color-positive);
-	--border-size: var(--stroke);
-
-	color: var(--color-positive);
-	background-color: var(--color-negative);
+	line-height: var(--line-height);
+	color: var(--color-background);
+	background-color: var(--color-text);
 }
