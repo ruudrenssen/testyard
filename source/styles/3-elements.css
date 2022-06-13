@@ -1,5 +1,5 @@
 body {
-	line-height: var(--line-height);
+	font: var(--font);
 	color: var(--color-background);
 	background-color: var(--color-text);
 }
