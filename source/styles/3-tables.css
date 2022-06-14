@@ -2,11 +2,9 @@ table {
     --cell-spacing: var(--size-l);
     --row-height: var(--size-xl);
     --header-color: var(--color-spot-1);
-    --text-color: var(--color-black);
+    --color-alt: hsla(var(--color-black), var(--shadow-light));
     
-    --color-alt: hsla(var(--text-color), var(--shadow-light));
-    
-    font: normal normal var(--weight) var(--size)/var(--row-height) var(--family-mono);
+    font: var(--style) var(--variant) var(--weight) var(--size)/var(--line-height) var(--family);
     text-align: right;
 }
 
@@ -15,8 +13,12 @@ caption {
 
     padding-right: calc(var(--cell-spacing) / 2);
 
-    font: normal normal var(--weight) var(--size-s)/var(--line-height) var(--family-narrow);
+    font: normal normal var(--weight) var(--size)/var(--line-height) var(--family-narrow);
     text-align: right;
+}
+
+caption:before {
+    content: '┗ ';
 }
 
 th, td {
