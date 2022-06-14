@@ -17,7 +17,14 @@ caption {
 }
 
 caption::before {
-    content: "Table " attr(data-table-number) " » ";
+    content: "» Table " attr(data-table-number) ": ";
+}
+
+thead, tfoot {
+    --color: hsl(var(--color-white));
+	--color-background: hsl(var(--color-black));
+
+    background: var(--color-background);
 }
 
 th, td {
