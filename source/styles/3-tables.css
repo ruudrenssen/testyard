@@ -3,6 +3,7 @@ table {
     --line-height: var(--size-xl);
     
     text-align: right;
+    font-variant-numeric: tabular-nums;
 }
 
 caption {
@@ -31,8 +32,6 @@ td {
 
 td {
     --family: var(--family-mono);
-
-    font-variant-numeric: tabular-nums;
 }
 
 th[scope="row"] {
