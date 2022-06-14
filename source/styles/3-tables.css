@@ -3,8 +3,8 @@ table {
     --row-height: var(--size-xl);
     --header-color: var(--color-spot-1);
     --color-alt: hsla(var(--color-black), var(--shadow-light));
+    --family: var(--family-narrow);
     
-    font: var(--style) var(--variant) var(--weight) var(--size)/var(--line-height) var(--family);
     text-align: right;
 }
 
@@ -13,23 +13,20 @@ caption {
 
     padding-right: calc(var(--cell-spacing) / 2);
 
-    font: normal normal var(--weight) var(--size)/var(--line-height) var(--family-narrow);
     text-align: right;
 }
 
-caption:before {
-    content: '┗ ';
+caption::before {
+    content: "Table " attr(data-table-number) " » ";
 }
 
 th, td {
     padding: 0 calc(var(--cell-spacing) / 2);
 }
 
-th {
-    font-family: var(--family-narrow);
-}
-
 td {
+    --family: var(--family-default);
+
     font-variant-numeric: tabular-nums;
 }
 

@@ -2,21 +2,21 @@
 	/* Properties */
 	--factor: 1.38;
 
-	--family: 'IBM Plex Sans', sans-serif;
+	--family-default: 'IBM Plex Sans', sans-serif;
 	--family-mono: 'IBM Plex Mono', monospace;
 	--family-narrow: 'IBM Plex Sans Condensed', sans-serif;
 
 	--weight-thin: 100;
 	--weight-extralight: 200;
 	--weight-light: 300;
-	--weight: 400;
+	--weight-default: 400;
 	--weight-medium: 500;
 	--weight-semibold: 600;
 	--weight-bold: 700;
 
-	--size: clamp(0.925em, 1.125vw, 1.125em);
-	--size-s: calc(var(--size) / var(--factor));
-	--size-l: calc(var(--size) * var(--factor));
+	--size-default: clamp(0.925em, 1.125vw, 1.125em);
+	--size-s: calc(var(--size-default) / var(--factor));
+	--size-l: calc(var(--size-default) * var(--factor));
 	--size-xl: calc(var(--size-l) * var(--factor));
 	--size-xxl: calc(var(--size-xl) * var(--factor));
 
@@ -39,6 +39,10 @@
 	--shadow-heavy: 85%;
 
 	/* Presets */
+	--family: var(--family-default);
+	--size: var(--size-default);
+	--weight: var(--weight-default);
+
 	--color: hsl(var(--color-black));
 	--color-background: hsl(var(--color-white));
 	--color-action: hsl(var(--color-spot-1));
