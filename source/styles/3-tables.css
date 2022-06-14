@@ -2,7 +2,6 @@ table {
     --cell-spacing: var(--size-l);
     --row-height: var(--size-xl);
     --header-color: var(--color-spot-1);
-    --color-alt: hsla(var(--color-black), var(--shadow-light));
     --family: var(--family-narrow);
     
     text-align: right;
@@ -23,8 +22,6 @@ caption::before {
 thead, tfoot {
     --color: hsl(var(--color-white));
 	--color-background: hsl(var(--color-black));
-
-    background: var(--color-background);
 }
 
 th, td {
@@ -42,5 +39,5 @@ th[scope="row"] {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: var(--color-alt);
+    --color-background: hsla(var(--color-black), var(--shadow-light));;
 }

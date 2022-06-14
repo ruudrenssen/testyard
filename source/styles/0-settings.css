@@ -34,7 +34,7 @@
 	--color-white: 0, 0%, 100%;
 	--color-spot-1: 213, 69%, 57%;
 
-	--shadow-light: 15%;
+	--shadow-light: 10%;
 	--shadow-normal: 50%;
 	--shadow-heavy: 85%;
 
@@ -44,7 +44,7 @@
 	--weight: var(--weight-default);
 
 	--color: hsl(var(--color-black));
-	--color-background: hsl(var(--color-white));
+	--color-background: transparent;
 	--color-action: hsl(var(--color-spot-1));
 	
 	--border-color: var(--color-background);
@@ -63,4 +63,5 @@
 
 	font: var(--style) var(--variant) var(--weight) var(--size)/var(--line-height) var(--family);
 	color: var(--color);
+	background-color: var(--color-background);
 }
