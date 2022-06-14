@@ -22,7 +22,6 @@ thead,
 tfoot {
     --color: hsl(var(--color-white));
 	--color-background: hsl(var(--color-black));
-    --weight: var(--weight-bold);
 }
 
 th,
@@ -30,16 +29,18 @@ td {
     padding: 0 calc(var(--cell-spacing) / 2);
 }
 
+th {
+    --weight: var(--weight-semibold);
+}
+
 td {
     --family: var(--family-mono);
 }
 
-th[scope="row"] {
-    --weight: var(--weight-bold);
-
-    text-align: left;
-}
-
 tbody tr:nth-child(odd) {
     --color-background: hsla(var(--color-black), var(--shadow-light));;
+}
+
+th[scope="row"] {
+    text-align: left;
 }
