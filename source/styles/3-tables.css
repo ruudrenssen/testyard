@@ -1,8 +1,6 @@
 table {
     --cell-spacing: var(--size-l);
-    --row-height: var(--size-xl);
-    --header-color: var(--color-spot-1);
-    --family: var(--family-narrow);
+    --line-height: var(--size-xl);
     
     text-align: right;
 }
@@ -19,22 +17,27 @@ caption::before {
     content: "» Table " attr(data-table-number) ": ";
 }
 
-thead, tfoot {
+thead,
+tfoot {
     --color: hsl(var(--color-white));
 	--color-background: hsl(var(--color-black));
+    --weight: var(--weight-bold);
 }
 
-th, td {
+th,
+td {
     padding: 0 calc(var(--cell-spacing) / 2);
 }
 
 td {
-    --family: var(--family-default);
+    --family: var(--family-mono);
 
     font-variant-numeric: tabular-nums;
 }
 
 th[scope="row"] {
+    --weight: var(--weight-bold);
+
     text-align: left;
 }
 
