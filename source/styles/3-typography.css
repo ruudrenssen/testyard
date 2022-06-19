@@ -20,5 +20,9 @@ strong {
 }
 
 a {
-    --color: var(--color-action);
+    --color-text: var(--color-action);
+}
+
+label {
+    --weight: var(--weight-medium);
 }
