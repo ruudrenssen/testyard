@@ -31,7 +31,7 @@
 	--border-width: 1px;
 
 	/* Colors */
-	--hue: 44;
+	--hue: 25;
 
 	--color: hsl(var(--hue), 100%, 50%);
 	--color-semi: hsla(var(--hue), 100%, 50%, 50%);
