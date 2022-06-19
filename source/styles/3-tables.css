@@ -18,10 +18,21 @@ caption::before {
     content: '» ';
 }
 
+col {
+    background-color: var(--color-section-1);
+}
+
+col:nth-child(even) {
+    background-color: var(--color-section-2);
+}
+
 thead,
-tfoot,
-th {
+tfoot {
     --weight: var(--weight-semibold);
+}
+
+tbody {
+    --weight: var(--weight-extralight);
 }
 
 th,
@@ -33,18 +44,12 @@ td {
     --family: var(--family-mono);
 }
 
-col {
-    background-color: var(--color-section-1);
-}
-
-col:nth-child(even) {
-    background-color: var(--color-section-2);
-}
-
 th:first-child {
+    --weight: var(--weight-semibold);
+    
     text-align: left;
 }
 
 tbody tr:hover {
-    background-color: var(--color-highlight);
+    background-color: var(--color-highlight-soft);
 }
