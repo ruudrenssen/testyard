@@ -30,30 +30,23 @@
 	--line-height: var(--factor);
 	--border-width: 2px;
 
-	/* Template Color */
+	/* Colors */
 	--hue: 24;
-	--saturation: 100%;
-	--lightness: 57%;
 
-	/* Composed colors */
-	--color-action: hsl(var(--hue), var(--saturation), var(--lightness));
-	--color-action-20: hsla(var(--hue), var(--saturation), var(--lightness), 20%);
+	--color: hsl(var(--hue), 100%, 50%);
+	--color-alt: hsl(calc(var(--hue) + 180), 100%, 50%);
+	--light: hsl(var(--hue), 5%, 95%);
+	--light-2: hsl(var(--hue), 10%, 90%);
+	--light-3: hsl(var(--hue), 10%, 80%);
+	--dark: hsl(var(--hue), 50%, 5%);
+	--dark-2: hsl(var(--hue), 10%, 10%);
+	--dark-3: hsl(var(--hue), 20%, 20%);
 
-	--color-alt: hsl(calc(var(--hue) + 180), var(--saturation), var(--lightness));
-	--color-alt-20: hsla(calc(var(--hue) + 180), var(--saturation), var(--lightness), 20%);
-	--color-alt-80: hsla(calc(var(--hue) + 180), calc(var(--saturation) / 2), calc(var(--lightness) / 4), 80%);
-
-	--color-text: hsl(var(--hue), calc(var(--saturation) / 2), calc(var(--lightness) / 4));
-	--color-text-10: hsla(var(--hue), calc(var(--saturation) / 2), calc(var(--lightness) / 4), 10%);
-	--color-text-20: hsla(var(--hue), calc(var(--saturation) / 2), calc(var(--lightness) / 4), 20%);
-
-	--color-background: hsl(var(--hue), calc(var(--saturation) / 3), calc(var(--lightness) * 1.7));
-	--color-background-10: hsl(var(--hue), calc(var(--saturation) / 3), calc(var(--lightness) *1.7 + 10));
-
-	--color-disabled: hsl(var(--hue), calc(var(--saturation) / 8), var(--lightness))
-
-	/* Set root font size */;
-	font-size: var(--size)
+	--color-action: var(--color);
+	--color-text: var(--dark);
+	--color-background: var(--light);
+	--color-section-1: var(--light-2);
+	--color-section-2: var(--light-3);
 }
 
 * {

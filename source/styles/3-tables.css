@@ -15,7 +15,7 @@ caption {
 }
 
 caption::before {
-    content: '📝';
+    content: '» ';
 }
 
 thead,
@@ -34,11 +34,11 @@ td {
 }
 
 col {
-    background-color: var(--color-text-10);
+    background-color: var(--color-section-1);
 }
 
 col:nth-child(even) {
-    background-color: var(--color-text-20);
+    background-color: var(--color-section-2);
 }
 
 th:first-child {
