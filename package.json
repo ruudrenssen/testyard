@@ -42,6 +42,6 @@
     "postcss-preset-env": "^6.7.0",
     "rollup": "^2.46.0",
     "rollup-plugin-terser": "^7.0.2",
-    "stylelint": "^13.13.0"
+    "stylelint": "^14.9.1"
   }
 }

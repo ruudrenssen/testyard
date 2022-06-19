@@ -1,5 +1,4 @@
 const path = require('path'); // native node
-
 const express = require('express'); // packages
 const exphbs = require('express-handlebars');
 

@@ -1,38 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 :root {
+	/* Properties */
 	--factor: 1.38;
 
-	--family: 'IBM Plex Sans', sans-serif;
+	--family-default: 'IBM Plex Sans', sans-serif;
 	--family-mono: 'IBM Plex Mono', monospace;
 	--family-narrow: 'IBM Plex Sans Condensed', sans-serif;
 
 	--weight-thin: 100;
 	--weight-extralight: 200;
 	--weight-light: 300;
-	--weight: 400;
+	--weight-default: 400;
 	--weight-medium: 500;
 	--weight-semibold: 600;
 	--weight-bold: 700;
 
-	--size: clamp(0.925em, 1.125vw, 1.125em);
-	--size-s: calc(var(--size) / var(--factor));
-	--size-l: calc(var(--factor) * var(--size));
-	--size-xl: calc(var(--factor) * var(--size-l));
-	--size-xxl: calc(var(--factor) * var(--size-xl));
+	--size-default: clamp(0.925em, 1.125vw, 1.125em);
+	--size-s: calc(var(--size-default) / var(--factor));
+	--size-l: calc(var(--size-default) * var(--factor));
+	--size-xl: calc(var(--size-l) * var(--factor));
+	--size-xxl: calc(var(--size-xl) * var(--factor));
+
+	--style: normal;
+
+	--variant: normal;
 
 	--stroke-s: 1px;
 	--stroke: 2px;
 	--stroke-l: 3px;
 
+	--stroke-style: solid;
+
 	--color-black: 270, 5%, 15%;
 	--color-white: 0, 0%, 100%;
-	--color-spot-1: 229, 61%, 35%;
+	--color-spot-1: 213, 69%, 57%;
 
-	--shadow-light: 15%;
+	--shadow-light: 10%;
 	--shadow-normal: 50%;
 	--shadow-heavy: 85%;
 
+	/* Presets */
+	--family: var(--family-default);
+	--size: var(--size-default);
+	--weight: var(--weight-default);
+
+	--color: hsl(var(--color-black));
+	--color-background: transparent;
+	--color-action: hsl(var(--color-spot-1));
+	
+	--border-color: var(--color-background);
+	--border-size: var(--stroke);
+	--border-style: var(--stroke-style);
+
+	--line-height: var(--factor);
+
+	/* Set root font size */
 	font-size: var(--size);
 }
 
@@ -40,7 +61,7 @@
 	margin: 0;
 	padding: 0;
 
-	font: normal normal var(--weight) var(--size)/var(--factor) var(--family);
-
-	font-variant-numeric: inherit;
+	font: var(--style) var(--variant) var(--weight) var(--size)/var(--line-height) var(--family);
+	color: var(--color);
+	background-color: var(--color-background);
 }

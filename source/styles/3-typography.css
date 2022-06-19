@@ -18,3 +18,7 @@ h3 {
 strong {
     --weight: var(--weight-medium);
 }
+
+a {
+    --color: var(--color-action);
+}
