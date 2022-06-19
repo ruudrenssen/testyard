@@ -16,7 +16,7 @@ router.get('/table', (req, res) => {
 
 	console.log(table);
 
-	res.render('experiments/table');
+	res.render('experiments/table', { table });
 });
 
 router.get('/typography', (req, res) => {
