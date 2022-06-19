@@ -28,11 +28,11 @@ caption span {
 
 
 col {
-    background-color: var(--color-section-2);
+    background-color: var(--color-section-1);
 }
 
 col:nth-child(even) {
-    background-color: var(--color-section-1);
+    background-color: var(--color-section-2);
 }
 
 thead,
