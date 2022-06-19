@@ -20,5 +20,30 @@ strong {
 }
 
 a {
-    --color: var(--color-action);
+    --color-text: var(--color-action);
+}
+
+label {
+    --weight: var(--weight-medium);
+}
+
+input {
+    --weight: var(--weight-medium);
+
+    padding: calc(var(--size-s)/2);
+
+    background-color: var(--color-text-20);
+    border: var(--border-width) solid transparent;
+}
+
+input:focus-visible,
+input:focus {
+    background-color: var(--color-alt-20);
+    border-color: var(--color-alt);
+
+    outline: none;
+}
+
+label:focus-within {
+    --color-text: var(--color-alt-80);
 }

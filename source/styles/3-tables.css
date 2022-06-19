@@ -14,14 +14,14 @@ caption {
     text-align: right;
 }
 
-col:nth-child(even) {
-    --color-background: hsla(var(--color-white), var(--shadow-normal));;
+caption::before {
+    content: '📝';
 }
 
 thead,
-tfoot {
-    --color: hsl(var(--color-white));
-	--color-background: hsl(var(--color-black));
+tfoot,
+th {
+    --weight: var(--weight-semibold);
 }
 
 th,
@@ -29,18 +29,22 @@ td {
     padding: 0 calc(var(--spacing) / 2);
 }
 
-th {
-    --weight: var(--weight-semibold);
-}
-
 td {
     --family: var(--family-mono);
 }
 
-tbody tr:nth-child(odd) {
-    --color-background: hsla(var(--color-black), var(--shadow-light));;
+col {
+    background-color: var(--color-text-10);
 }
 
-th[scope="row"] {
+col:nth-child(even) {
+    background-color: var(--color-text-20);
+}
+
+th:first-child {
     text-align: left;
+}
+
+tbody tr:hover {
+    background-color: var(--color-action-20);
 }

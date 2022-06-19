@@ -9,59 +9,59 @@
 	--weight-thin: 100;
 	--weight-extralight: 200;
 	--weight-light: 300;
-	--weight-default: 400;
+	--weight-regular: 400;
 	--weight-medium: 500;
 	--weight-semibold: 600;
 	--weight-bold: 700;
 
-	--size-default: clamp(0.925em, 1.125vw, 1.125em);
+	--size-default: clamp(1em, 1.125vw, 1.25em);
 	--size-s: calc(var(--size-default) / var(--factor));
 	--size-l: calc(var(--size-default) * var(--factor));
 	--size-xl: calc(var(--size-l) * var(--factor));
 	--size-xxl: calc(var(--size-xl) * var(--factor));
 
 	--style: normal;
-
 	--variant: normal;
-
-	--stroke-s: 1px;
-	--stroke: 2px;
-	--stroke-l: 3px;
-
-	--stroke-style: solid;
-
-	--color-black: 270, 5%, 15%;
-	--color-white: 0, 0%, 100%;
-	--color-spot-1: 213, 69%, 57%;
-
-	--shadow-light: 10%;
-	--shadow-normal: 50%;
-	--shadow-heavy: 85%;
 
 	/* Presets */
 	--family: var(--family-default);
 	--size: var(--size-default);
-	--weight: var(--weight-default);
-
-	--color: hsl(var(--color-black));
-	--color-background: transparent;
-	--color-action: hsl(var(--color-spot-1));
-	
-	--border-color: var(--color-background);
-	--border-size: var(--stroke);
-	--border-style: var(--stroke-style);
-
+	--weight: var(--weight-regular);
 	--line-height: var(--factor);
+	--border-width: 2px;
 
-	/* Set root font size */
-	font-size: var(--size);
+	/* Template Color */
+	--hue: 24;
+	--saturation: 100%;
+	--lightness: 57%;
+
+	/* Composed colors */
+	--color-action: hsl(var(--hue), var(--saturation), var(--lightness));
+	--color-action-20: hsla(var(--hue), var(--saturation), var(--lightness), 20%);
+
+	--color-alt: hsl(calc(var(--hue) + 180), var(--saturation), var(--lightness));
+	--color-alt-20: hsla(calc(var(--hue) + 180), var(--saturation), var(--lightness), 20%);
+	--color-alt-80: hsla(calc(var(--hue) + 180), calc(var(--saturation) / 2), calc(var(--lightness) / 4), 80%);
+
+	--color-text: hsl(var(--hue), calc(var(--saturation) / 2), calc(var(--lightness) / 4));
+	--color-text-10: hsla(var(--hue), calc(var(--saturation) / 2), calc(var(--lightness) / 4), 10%);
+	--color-text-20: hsla(var(--hue), calc(var(--saturation) / 2), calc(var(--lightness) / 4), 20%);
+
+	--color-background: hsl(var(--hue), calc(var(--saturation) / 3), calc(var(--lightness) * 1.7));
+	--color-background-10: hsl(var(--hue), calc(var(--saturation) / 3), calc(var(--lightness) *1.7 + 10));
+
+	--color-disabled: hsl(var(--hue), calc(var(--saturation) / 8), var(--lightness))
+
+	/* Set root font size */;
+	font-size: var(--size)
 }
 
 * {
+	box-sizing: border-box;
+
 	margin: 0;
 	padding: 0;
 
 	font: var(--style) var(--variant) var(--weight) var(--size)/var(--line-height) var(--family);
-	color: var(--color);
-	background-color: var(--color-background);
+	color: var(--color-text);
 }
