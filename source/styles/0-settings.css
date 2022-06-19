@@ -28,7 +28,7 @@
 	--size: var(--size-default);
 	--weight: var(--weight-regular);
 	--line-height: var(--factor);
-	--border-width: 2px;
+	--border-width: 1px;
 
 	/* Colors */
 	--hue: 44;
@@ -39,16 +39,19 @@
 	--color-alt-semi: hsla(calc(var(--hue) + 180), 100%, 50%, 15%);
 	--light: hsl(var(--hue), 5%, 95%);
 	--light-2: hsl(var(--hue), 10%, 90%);
-	--light-3: hsl(var(--hue), 10%, 80%);
+	--light-3: hsl(var(--hue), 10%, 85%);
+	--light-4: hsl(var(--hue), 10%, 80%);
 	--dark: hsl(var(--hue), 5%, 5%);
 	--dark-2: hsl(var(--hue), 10%, 10%);
-	--dark-3: hsl(var(--hue), 10%, 20%);
+	--dark-3: hsl(var(--hue), 10%, 15%);
+	--dark-4: hsl(var(--hue), 10%, 20%);
 
 	--color-action: var(--color);
 	--color-text: var(--dark);
 	--color-background: var(--light);
 	--color-section-1: var(--light-2);
 	--color-section-2: var(--light-3);
+	--color-section-3: var(--light-4);
 	--color-highlight: var(--color-alt);
 	--color-highlight-soft: var(--color-alt-semi);
 }
@@ -65,10 +68,10 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-action: var(--color);
 		--color-text: var(--light);
 		--color-background: var(--dark);
 		--color-section-1: var(--dark-2);
 		--color-section-2: var(--dark-3);
+		--color-section-3: var(--dark-4);
 	}
 }
