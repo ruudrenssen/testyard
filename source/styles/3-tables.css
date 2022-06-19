@@ -46,5 +46,5 @@ th:first-child {
 }
 
 tbody tr:hover {
-    background-color: var(--color-action-20);
+    background-color: var(--color-highlight);
 }

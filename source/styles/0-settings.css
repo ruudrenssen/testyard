@@ -31,22 +31,25 @@
 	--border-width: 2px;
 
 	/* Colors */
-	--hue: 24;
+	--hue: 40;
 
 	--color: hsl(var(--hue), 100%, 50%);
+	--color-semi: hsla(var(--hue), 100%, 50%, 50%);
 	--color-alt: hsl(calc(var(--hue) + 180), 100%, 50%);
+	--color-alt-semi: hsla(calc(var(--hue) + 180), 100%, 50%, 15%);
 	--light: hsl(var(--hue), 5%, 95%);
 	--light-2: hsl(var(--hue), 10%, 90%);
 	--light-3: hsl(var(--hue), 10%, 80%);
-	--dark: hsl(var(--hue), 50%, 5%);
+	--dark: hsl(var(--hue), 5%, 5%);
 	--dark-2: hsl(var(--hue), 10%, 10%);
-	--dark-3: hsl(var(--hue), 20%, 20%);
+	--dark-3: hsl(var(--hue), 10%, 20%);
 
 	--color-action: var(--color);
 	--color-text: var(--dark);
 	--color-background: var(--light);
 	--color-section-1: var(--light-2);
 	--color-section-2: var(--light-3);
+	--color-highlight: var(--color-alt-semi);
 }
 
 * {
@@ -57,4 +60,14 @@
 
 	font: var(--style) var(--variant) var(--weight) var(--size)/var(--line-height) var(--family);
 	color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-action: var(--color);
+		--color-text: var(--light);
+		--color-background: var(--dark);
+		--color-section-1: var(--dark-2);
+		--color-section-2: var(--dark-3);
+	}
 }
