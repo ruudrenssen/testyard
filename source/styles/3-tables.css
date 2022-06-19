@@ -106,7 +106,7 @@ main > table:only-child th:first-child {
 }
 
 main > table:only-child tr:hover th:first-child {
-    --color-text: var(--color-background);
-    
+    color: var(--color-background);
+
     background-color: var(--color-highlight)
 }
