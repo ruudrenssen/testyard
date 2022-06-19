@@ -14,8 +14,8 @@ caption {
     text-align: right;
 }
 
-caption::before {
-    content: "» Table " attr(data-table-number) ": ";
+col:nth-child(even) {
+    --color-background: hsla(var(--color-white), var(--shadow-normal));;
 }
 
 thead,
