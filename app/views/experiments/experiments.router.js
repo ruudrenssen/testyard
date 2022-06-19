@@ -1,4 +1,5 @@
 const service = require('./experiments.service');
+const tableService = require('./table.service');
 
 const express = require('express');
 
@@ -11,6 +12,10 @@ router.get('/', (req, res) => {
 });
 
 router.get('/table', (req, res) => {
+	const { table } = tableService;
+
+	console.log(table);
+
 	res.render('experiments/table');
 });
 
