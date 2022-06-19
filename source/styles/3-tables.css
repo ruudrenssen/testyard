@@ -11,16 +11,21 @@ table {
 }
 
 caption {
+    --weight: var(--weight-semibold);
+    
     caption-side: bottom;
 
     padding: 0 var(--cell-padding);
 
-    text-align: right;
+    box-shadow: 0 1px 0 var(--color-background);
+
+    text-transform: uppercase;
 }
 
-caption::before {
-    content: '» ';
+caption span {
+    text-transform: initial;
 }
+
 
 col {
     background-color: var(--color-section-2);
@@ -41,7 +46,7 @@ tbody {
 
 th,
 td {
-    padding: 0 calc(var(--cell-padding) / 2);
+    padding: 0 var(--cell-padding);
 }
 
 td {
@@ -65,20 +70,23 @@ main > table:only-child {
     position: relative;
     width: 100%;
 
-    box-shadow: inset(0 var(--border-width) var(--color-background));
-
     margin: -1px;
 }
 
 main > table:only-child caption {
     position: sticky;
-    bottom: 0;
-    z-index: 2;
-    width: 100%;
+    z-index: 3;
+    bottom: var(--cell-spacing);
+    left: 0;
 
     background-color: var(--color-background);
 
     text-align: left;
+}
+
+main > table:only-child caption span {
+    position: sticky;
+    left: var(--cell-padding);
 }
 
 main > table:only-child thead,
@@ -94,7 +102,7 @@ main > table:only-child thead {
 }
 
 main > table:only-child tfoot {
-    bottom: calc(var(--line-height));
+    bottom: calc(var(--line-height) + 1 * var(--cell-spacing));
 }
 
 main > table:only-child th:first-child {
@@ -102,11 +110,14 @@ main > table:only-child th:first-child {
     z-index: 1;
     left: 0;
 
-    background-color: var(--color-section-3);
+    background-color: var(--color-section-2);
 }
 
-main > table:only-child tr:hover th:first-child {
-    color: var(--color-background);
+main > table:only-child thead tr th:first-child,
+main > table:only-child tfoot tr th:first-child {
+    background: var(--color-section-3);
+}
 
-    background-color: var(--color-highlight)
+main > table:only-child tbody tr:hover th:first-child {
+    background: var(--color-section-2) linear-gradient(var(--color-highlight-soft), var(--color-highlight-soft));
 }
