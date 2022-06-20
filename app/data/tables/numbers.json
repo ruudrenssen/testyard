@@ -1,0 +1,26 @@
+{
+  "caption": "Examples of different number formatting",
+  "intl": "NumberFormat",
+  "value": 123456.789,
+  "options": [
+    {
+      "property": "notation",
+      "title": "Notation",
+      "values": [
+        "standard",
+        "scientific",
+        "engineering",
+        "compact"
+      ]
+    },
+    {
+      "property": "style",
+      "title": "Style",
+      "values": [
+        "decimal",
+        "currency",
+        "percent"
+      ]
+    }
+  ]
+}

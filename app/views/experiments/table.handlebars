@@ -4,39 +4,19 @@
 			Table 1: Notations by country
 		</span>
 	</caption>
+	
 	<colgroup>
-		<col span="2">
-		{{#each table.cultures}}
-		<col>
-		{{/each}}
 	</colgroup>
+	
 	<thead>
-		<tr>
-			<th scope="col">Type of value</th>
-			<th scope="col">System</th>
-			{{#each table.cultures as |item|}}
-				<th>{{item}}</th>
-			{{/each}}
-		</tr>
 	</thead>
+	
 	<tbody>
-		{{#each table.values}}
-			<tr>
-				<th scope="row">{{ title }}</th>
-				<td>{{ value }}</td>
-				{{#each @root.table.cultures as |item|}}
-					<td>{{item}}</td>
-				{{/each}}
-			</tr>
-		{{/each}}
+		
 	</tbody>
+	
 	<tfoot>
 		<tr>
-			<th scope="row">Footer</th>
-			<td></td>
-			{{#each @root.table.cultures as |item|}}
-				<td></td>
-			{{/each}}
 		</tr>
 	</tfoot>
 </table>
