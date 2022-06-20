@@ -18,8 +18,35 @@
       "title": "Style",
       "values": [
         "decimal",
-        "currency",
-        "percent"
+        "percent",
+        {
+          "value": "currency",
+          "attributes": {
+            "currency": "EUR",
+            "currencyDisplay": "name"
+          }
+        },
+        {
+          "value": "unit",
+          "attributes": {
+            "unit": "liter",
+            "unitDisplay": "long"
+          }
+        },
+        {
+          "value": "unit",
+          "attributes": {
+            "unit": "degree",
+            "unitDisplay": "long"
+          }
+        },
+        {
+          "value": "unit",
+          "attributes": {
+            "unit": "week",
+            "unitDisplay": "long"
+          }
+        }
       ]
     }
   ]

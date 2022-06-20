@@ -12,11 +12,9 @@ router.get('/', (req, res) => {
 });
 
 router.get('/table', (req, res) => {
-	const { table } = tableService;
+	const { tables } = tableService;
 
-	console.log(table);
-
-	res.render('experiments/table', { table });
+	res.render('experiments/table', { tables });
 });
 
 router.get('/typography', (req, res) => {

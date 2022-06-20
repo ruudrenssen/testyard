@@ -17,21 +17,14 @@ caption {
 
     padding: 0 var(--cell-padding);
 
-    box-shadow: 0 1px 0 var(--color-background);
-
-    text-transform: uppercase;
-}
-
-caption span {
-    text-transform: initial;
-}
-
-
-col {
     background-color: var(--color-section-1);
 }
 
-col:nth-child(even) {
+colgroup {
+    background-color: var(--color-section-1);
+}
+
+colgroup:nth-child(even) {
     background-color: var(--color-section-2);
 }
 
@@ -47,6 +40,8 @@ tbody {
 th,
 td {
     padding: 0 var(--cell-padding);
+
+    white-space: nowrap;
 }
 
 td {
@@ -76,17 +71,17 @@ main > table:only-child {
 main > table:only-child caption {
     position: sticky;
     z-index: 3;
-    bottom: var(--cell-spacing);
+    bottom: 0;
     left: 0;
+    height: var(--line-height);
 
-    background-color: var(--color-background);
-
-    text-align: left;
+    border-top: var(--border-width) solid var(--color-section-3);
 }
 
 main > table:only-child caption span {
-    position: sticky;
-    left: var(--cell-padding);
+    position: absolute;
+    left: 50vw;
+    transform: translate(-50%, 0);
 }
 
 main > table:only-child thead,
@@ -102,7 +97,7 @@ main > table:only-child thead {
 }
 
 main > table:only-child tfoot {
-    bottom: calc(var(--line-height) + 1 * var(--cell-spacing));
+    bottom: calc(var(--line-height) - var(--cell-spacing));
 }
 
 main > table:only-child th:first-child {

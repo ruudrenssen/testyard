@@ -3,34 +3,54 @@ const numberModel = require('../../data/tables/numbers.json');
 
 const tables = [];
 
+const getColgroups = function (options) {
+  const colgroups = [['col']]; // start with a colgroup for the first cell that serves as header
+
+  options.forEach(option => colgroups.push(option.values.map(value => 'col')));
+
+  return colgroups;
+}
+
 const buildTable = function (model) {
-    const options = model.options;
-    const rows = languageCultureList.map(culture => culture.cultureInfoCode);
-    const table = {
-        caption: model?.caption,
-        value: model?.value,
-        format: model?.intl,
-        header: [],
-        body: [],
-        footer: []
-    }
+  const rows = languageCultureList;
 
-    table.body = rows.map(row => {
-        const rowValues = [];
-        rowValues.push(row);
-        
-        options.forEach(option => {
-            rowValues.push(option.values.map(value => value));
-        });
+  const table = {
+    caption: model?.caption,
+    colgroups: getColgroups(model.options),
+    value: model?.value,
+    format: model?.intl,
+    header: undefined,
+    body: undefined,
+    footer: undefined
+  }
 
-        return rowValues;
+  table.body = rows.map(row => {
+    const rowValues = [];
+    rowValues.push([row]);
+
+    model.options.forEach(option => {
+      rowValues.push(option.values.map(optionValue => {
+        const key = option.property;
+
+        if (optionValue?.attributes) {
+          return new Intl.NumberFormat(row.cultureInfoCode, {
+            [key]: optionValue.value,
+            ...optionValue.attributes
+          }).format(model.value);
+        } else {
+          return new Intl.NumberFormat(row.cultureInfoCode, {
+            [key]: optionValue
+          }).format(model.value);
+        }
+      }));
     });
 
-    return table;
+    return rowValues;
+  });
+
+  return table;
 }
 
 tables.push(buildTable(numberModel));
-
-console.log(tables[0]);
 
 module.exports = { tables };
