@@ -1,7 +1,7 @@
 {
   "caption": "Examples of different number formatting",
   "intl": "NumberFormat",
-  "value": 123456.789,
+  "value": 123456789.12345,
   "options": [
     {
       "property": "notation",
@@ -19,6 +19,21 @@
       "values": [
         "decimal",
         "percent",
+        {
+          "value": "currency",
+          "attributes": {
+            "currency": "EUR",
+            "currencyDisplay": "name"
+          }
+        },
+        {
+          "value": "currency",
+          "attributes": {
+            "currency": "JPY",
+            "currencyDisplay": "code",
+            "currencySign": "accounting"
+          }
+        },
         {
           "value": "currency",
           "attributes": {

@@ -26,21 +26,25 @@ const buildTable = function (model) {
 
   table.body = rows.map(row => {
     const rowValues = [];
+    const value = model.value * (Math.random() - .5);
+    
     rowValues.push([row]);
 
     model.options.forEach(option => {
       rowValues.push(option.values.map(optionValue => {
         const key = option.property;
 
+        console.log(value);
+
         if (optionValue?.attributes) {
           return new Intl.NumberFormat(row.cultureInfoCode, {
             [key]: optionValue.value,
             ...optionValue.attributes
-          }).format(model.value);
+          }).format(value);
         } else {
           return new Intl.NumberFormat(row.cultureInfoCode, {
             [key]: optionValue
-          }).format(model.value);
+          }).format(value);
         }
       }));
     });
