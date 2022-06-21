@@ -1,18 +1,26 @@
 {
   "caption": "Currency formatting",
   "intl": "NumberFormat",
-  "value": 123456789.12345,
+  "value": -123456789.12345,
   "options": [
     {
       "property": "style",
-      "title": "Style",
+      "title": "Currency Display",
       "values": [
         {
           "value": "currency",
           "title": "Currency",
           "attributes": {
             "currency": "EUR",
-            "currencyDisplay": "name"
+            "currencyDisplay": "symbol"
+          }
+        },
+        {
+          "value": "currency",
+          "title": "Currency",
+          "attributes": {
+            "currency": "EUR",
+            "currencyDisplay": "narrowSymbol"
           }
         },
         {
@@ -35,14 +43,15 @@
     },
     {
       "property": "style",
-      "title": "Style",
+      "title": "Currency Sign",
       "values": [
         {
           "value": "currency",
           "title": "Currency",
           "attributes": {
             "currency": "JPY",
-            "currencyDisplay": "name"
+            "currencyDisplay": "symbol",
+            "currencySign": "accounting"
           }
         },
         {
@@ -50,7 +59,8 @@
           "title": "Currency",
           "attributes": {
             "currency": "JPY",
-            "currencyDisplay": "code"
+            "currencyDisplay": "narrowSymbol",
+            "currencySign": "accounting"
           }
         },
         {
@@ -58,37 +68,8 @@
           "title": "Currency",
           "attributes": {
             "currency": "JPY",
-            "currencyDisplay": "name"
-          }
-        }
-      ]
-    },
-    {
-      "property": "style",
-      "title": "Style",
-      "values": [
-        {
-          "value": "currency",
-          "title": "Currency",
-          "attributes": {
-            "currency": "TND",
-            "currencyDisplay": "name"
-          }
-        },
-        {
-          "value": "currency",
-          "title": "Currency",
-          "attributes": {
-            "currency": "TND",
-            "currencyDisplay": "code"
-          }
-        },
-        {
-          "value": "currency",
-          "title": "Currency",
-          "attributes": {
-            "currency": "TND",
-            "currencyDisplay": "name"
+            "currencyDisplay": "code",
+            "currencySign": "accounting"
           }
         }
       ]

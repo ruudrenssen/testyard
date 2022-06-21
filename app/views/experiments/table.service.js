@@ -1,5 +1,4 @@
 const languageCultureList = require('../../data/tables/language-culture-names-list.json');
-const numberModel = require('../../data/tables/numbers.json');
 const currencyModel = require('../../data/tables/currency.json');
 
 const tables = [];
