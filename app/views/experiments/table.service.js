@@ -1,5 +1,6 @@
 const languageCultureList = require('../../data/tables/language-culture-names-list.json');
 const numberModel = require('../../data/tables/numbers.json');
+const currencyModel = require('../../data/tables/currency.json');
 
 const tables = [];
 
@@ -26,15 +27,13 @@ const buildTable = function (model) {
 
   table.body = rows.map(row => {
     const rowValues = [];
-    const value = model.value * (Math.random() - .5);
+    const value = model.value;
     
     rowValues.push([row]);
 
     model.options.forEach(option => {
       rowValues.push(option.values.map(optionValue => {
         const key = option.property;
-
-        console.log(value);
 
         if (optionValue?.attributes) {
           return new Intl.NumberFormat(row.cultureInfoCode, {
@@ -55,6 +54,6 @@ const buildTable = function (model) {
   return table;
 }
 
-tables.push(buildTable(numberModel));
+tables.push(buildTable(currencyModel));
 
 module.exports = { tables };

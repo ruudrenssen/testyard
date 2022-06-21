@@ -18,7 +18,13 @@
       "title": "Style",
       "values": [
         "decimal",
-        "percent",
+        "percent"
+      ]
+    },
+    {
+      "property": "style",
+      "title": "Style",
+      "values": [
         {
           "value": "currency",
           "attributes": {
@@ -40,7 +46,13 @@
             "currency": "EUR",
             "currencyDisplay": "name"
           }
-        },
+        }
+      ]
+    },
+    {
+      "property": "style",
+      "title": "Style",
+      "values": [
         {
           "value": "unit",
           "attributes": {
