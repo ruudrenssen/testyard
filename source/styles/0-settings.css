@@ -14,7 +14,7 @@
 	--weight-semibold: 600;
 	--weight-bold: 700;
 
-	--size-default: clamp(0.975em, 1.125vw, 1.25em);
+	--size-default: clamp(0.975rem, 1.125vw, 1.125rem);
 	--size-s: calc(var(--size-default) / var(--factor));
 	--size-l: calc(var(--size-default) * var(--factor));
 	--size-xl: calc(var(--size-l) * var(--factor));

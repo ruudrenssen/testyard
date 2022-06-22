@@ -2,6 +2,8 @@ table {
     --cell-spacing: var(--border-width);
     --cell-padding: var(--size-s);
     --line-height: var(--size-xl);
+
+    margin: -1px;
     
     text-align: right;
     font-variant-numeric: tabular-nums;
@@ -12,12 +14,16 @@ table {
 
 caption {
     --weight: var(--weight-semibold);
+    --size: var(--size-l);
     
-    caption-side: bottom;
+    caption-side: top;
 
-    padding: 0 var(--cell-padding);
+    margin: 0 var(--cell-spacing);
+    padding: var(--cell-padding);
 
-    background-color: var(--color-section-1);
+    background-color: var(--color-section-3);
+
+    text-align: left;
 }
 
 colgroup {
@@ -31,6 +37,8 @@ colgroup:nth-child(even) {
 thead,
 tfoot {
     --weight: var(--weight-semibold);
+
+    background-color: var(--color-section-3);
 }
 
 tbody {
@@ -64,23 +72,20 @@ tbody tr:hover {
 main > table:only-child {
     position: relative;
     width: 100%;
-
-    margin: -1px;
 }
 
 main > table:only-child caption {
     position: sticky;
     z-index: 3;
-    bottom: 0;
-    left: 0;
-    height: var(--line-height);
+    top: 0;
 
-    border-top: var(--border-width) solid var(--color-section-2);
+    caption-side: top;
+
+    outline: var(--cell-spacing) solid var(--color-background);
 }
 
 main > table:only-child caption span {
-    position: fixed;
-    bottom: var(--cell-padding);
+    position: sticky;
     left: var(--cell-padding);
 }
 
@@ -88,16 +93,14 @@ main > table:only-child thead,
 main > table:only-child tfoot {
     position: sticky;
     z-index: 2;
-
-    background-color: var(--color-section-3);
 }
 
 main > table:only-child thead {
-    top: 0;
+    top: calc(var(--size-xl) + 2 * var(--cell-padding) + var(--cell-spacing));
 }
 
 main > table:only-child tfoot {
-    bottom: calc(var(--line-height) - var(--cell-spacing));
+    bottom: 0;
 }
 
 main > table:only-child th:first-child {
@@ -105,6 +108,11 @@ main > table:only-child th:first-child {
     z-index: 1;
     left: 0;
 
+    background-color: var(--color-section-2);
+}
+
+main > table:only-child thead th:first-child,
+main > table:only-child tfoot th:first-child {
     background-color: var(--color-section-3);
 }
 
