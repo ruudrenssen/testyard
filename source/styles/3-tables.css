@@ -69,12 +69,12 @@ tbody tr:hover {
 }
 
 /* Sticky table */
-.sticky-table table:only-child {
+main > table:only-child {
     position: relative;
     width: 100%;
 }
 
-.sticky-table table:only-child caption {
+main > table:only-child caption {
     position: sticky;
     z-index: 3;
     top: 0;
@@ -84,26 +84,26 @@ tbody tr:hover {
     outline: var(--cell-spacing) solid var(--color-background);
 }
 
-.sticky-table table:only-child caption span {
+main > table:only-child caption span {
     position: sticky;
     left: var(--cell-padding);
 }
 
-.sticky-table table:only-child thead,
-.sticky-table table:only-child tfoot {
+main > table:only-child thead,
+main > table:only-child tfoot {
     position: sticky;
     z-index: 2;
 }
 
-.sticky-table table:only-child thead {
+main > table:only-child thead {
     top: calc(var(--size-xl) + 2 * var(--cell-padding) + var(--cell-spacing));
 }
 
-.sticky-table table:only-child tfoot {
+main > table:only-child tfoot {
     bottom: 0;
 }
 
-.sticky-table table:only-child th:first-child {
+main > table:only-child th:first-child {
     position: sticky;
     z-index: 1;
     left: 0;
@@ -111,11 +111,11 @@ tbody tr:hover {
     background-color: var(--color-section-2);
 }
 
-.sticky-table table:only-child thead th:first-child,
-.sticky-table table:only-child tfoot th:first-child {
+main > table:only-child thead th:first-child,
+main > table:only-child tfoot th:first-child {
     background-color: var(--color-section-3);
 }
 
-.sticky-table table:only-child tbody tr:hover th:first-child {
+main > table:only-child tbody tr:hover th:first-child {
     background: var(--color-section-2) linear-gradient(var(--color-highlight-soft), var(--color-highlight-soft));
 }
