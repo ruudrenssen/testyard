@@ -1,81 +1,83 @@
-<table>
-	<caption>
-		<span>Example table: {{ tables.[0].caption }}</span>
-	</caption>
-	
-	{{#each tables.[0].colgroups as |colgroup|}}
-		<colgroup>
-			{{#each colgroup}}
-			<col>
-			{{/each}}
-		</colgroup>
-	{{/each}}
-	
-	{{#if tables.[0].header}}
-		<thead>
-			<th></th>
-			{{#each tables.[0].header as |header|}}
-				<th>{{ header }}</th>
-			{{/each}}
-		</thead>
-	{{/if}}
-
-	<thead>
-		<tr>
-			<th scope="col">Country - language</th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-		</tr>
-	</thead>
-	
-	<tbody>
-		{{#each tables.[0].body as |row|}}
-			<tr>
-				{{#each row as |colgroup|}}
-					{{#if @first}}
-						{{#each colgroup as |col|}}
-								<th>{{ col.country }} - {{ col.language }}</th>
-						{{/each}}
-					{{else}}
-						{{#each colgroup as |col|}}
-							<td>{{ col }}</td>
-						{{/each}}
-					{{/if}}
-				{{/each}}			
-			</tr>
+<div class="sticky-table">
+	<table>
+		<caption>
+			<span>Example table: {{ tables.[0].caption }}</span>
+		</caption>
+		
+		{{#each tables.[0].colgroups as |colgroup|}}
+			<colgroup>
+				{{#each colgroup}}
+				<col>
+				{{/each}}
+			</colgroup>
 		{{/each}}
-	</tbody>
+		
+		{{#if tables.[0].header}}
+			<thead>
+				<th></th>
+				{{#each tables.[0].header as |header|}}
+					<th>{{ header }}</th>
+				{{/each}}
+			</thead>
+		{{/if}}
 
-	<tfoot>
-		<tr>
-			<th scope="col">Total</th>
-			<th scope="col"></th>
-			<th scope="col">ges</th>
-			<th scope="col"></th>
-			<th scope="col">ergs</th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col">esgr</th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-		</tr>
-	</tfoot>
-	
-	{{#if tables.[0].footer}}
-	<tfoot>
-		<tr>
-		</tr>
-	</tfoot>
-	{{/if}}
-</table>
+		<thead>
+			<tr>
+				<th scope="col">Country - language</th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			{{#each tables.[0].body as |row|}}
+				<tr>
+					{{#each row as |colgroup|}}
+						{{#if @first}}
+							{{#each colgroup as |col|}}
+									<th>{{ col.country }} - {{ col.language }}</th>
+							{{/each}}
+						{{else}}
+							{{#each colgroup as |col|}}
+								<td>{{ col }}</td>
+							{{/each}}
+						{{/if}}
+					{{/each}}			
+				</tr>
+			{{/each}}
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<th scope="col">Total</th>
+				<th scope="col"></th>
+				<th scope="col">ges</th>
+				<th scope="col"></th>
+				<th scope="col">ergs</th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col">esgr</th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+			</tr>
+		</tfoot>
+		
+		{{#if tables.[0].footer}}
+		<tfoot>
+			<tr>
+			</tr>
+		</tfoot>
+		{{/if}}
+	</table>
+</div>
