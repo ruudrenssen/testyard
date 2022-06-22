@@ -4,13 +4,23 @@
   "value": -123456789.12345,
   "options": [
     {
+      "property": "notation",
+      "title": "Notation",
+      "options": [
+        "standard",
+        "scientific",
+        "engineering",
+        "compact"
+      ]
+    },
+    {
       "property": "style",
       "title": "Currency Display",
-      "values": [
+      "options": [
         {
           "value": "currency",
           "title": "Currency",
-          "attributes": {
+          "options": {
             "currency": "EUR",
             "currencyDisplay": "symbol"
           }
@@ -18,7 +28,7 @@
         {
           "value": "currency",
           "title": "Currency",
-          "attributes": {
+          "options": {
             "currency": "EUR",
             "currencyDisplay": "narrowSymbol"
           }
@@ -26,7 +36,7 @@
         {
           "value": "currency",
           "title": "Currency",
-          "attributes": {
+          "options": {
             "currency": "EUR",
             "currencyDisplay": "code"
           }
@@ -34,7 +44,7 @@
         {
           "value": "currency",
           "title": "Currency",
-          "attributes": {
+          "options": {
             "currency": "EUR",
             "currencyDisplay": "name"
           }
@@ -44,11 +54,11 @@
     {
       "property": "style",
       "title": "Currency Sign",
-      "values": [
+      "options": [
         {
           "value": "currency",
           "title": "Currency",
-          "attributes": {
+          "options": {
             "currency": "JPY",
             "currencyDisplay": "symbol",
             "currencySign": "accounting"
@@ -57,7 +67,7 @@
         {
           "value": "currency",
           "title": "Currency",
-          "attributes": {
+          "options": {
             "currency": "JPY",
             "currencyDisplay": "narrowSymbol",
             "currencySign": "accounting"
@@ -66,7 +76,7 @@
         {
           "value": "currency",
           "title": "Currency",
-          "attributes": {
+          "options": {
             "currency": "JPY",
             "currencyDisplay": "code",
             "currencySign": "accounting"

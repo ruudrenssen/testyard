@@ -6,20 +6,29 @@ const tables = [];
 const getColgroups = function (options) {
   const colgroups = [['col']]; // start with a colgroup for the first cell that serves as header
 
-  options.forEach(option => colgroups.push(option.values.map(value => 'col')));
+  options.forEach(option => colgroups.push(option.options.map(value => 'col')));
 
   return colgroups;
+}
+
+const getHeaders = function(options) {
+    const headers = [];
+    options.forEach(option => {
+        if (option.options[0]?.options) {
+            
+        }
+    });
 }
 
 const buildTable = function (model) {
   const rows = languageCultureList;
 
   const table = {
-    caption: model?.caption,
-    colgroups: getColgroups(model.options),
     value: model?.value,
     format: model?.intl,
-    header: undefined,
+    caption: model?.caption,
+    colgroups: getColgroups(model.options),
+    header: getHeaders(model.options),
     body: undefined,
     footer: undefined
   }
@@ -31,13 +40,13 @@ const buildTable = function (model) {
     rowValues.push([row]);
 
     model.options.forEach(option => {
-      rowValues.push(option.values.map(optionValue => {
+      rowValues.push(option.options.map(optionValue => {
         const key = option.property;
 
-        if (optionValue?.attributes) {
+        if (optionValue?.options) {
           return new Intl.NumberFormat(row.cultureInfoCode, {
             [key]: optionValue.value,
-            ...optionValue.attributes
+            ...optionValue.options
           }).format(value);
         } else {
           return new Intl.NumberFormat(row.cultureInfoCode, {

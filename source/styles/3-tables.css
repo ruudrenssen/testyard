@@ -75,13 +75,13 @@ main > table:only-child caption {
     left: 0;
     height: var(--line-height);
 
-    border-top: var(--border-width) solid var(--color-section-3);
+    border-top: var(--border-width) solid var(--color-section-2);
 }
 
 main > table:only-child caption span {
-    position: absolute;
-    left: 50vw;
-    transform: translate(-50%, 0);
+    position: fixed;
+    bottom: var(--cell-padding);
+    left: var(--cell-padding);
 }
 
 main > table:only-child thead,
@@ -105,12 +105,7 @@ main > table:only-child th:first-child {
     z-index: 1;
     left: 0;
 
-    background-color: var(--color-section-2);
-}
-
-main > table:only-child thead tr th:first-child,
-main > table:only-child tfoot tr th:first-child {
-    background: var(--color-section-3);
+    background-color: var(--color-section-3);
 }
 
 main > table:only-child tbody tr:hover th:first-child {
