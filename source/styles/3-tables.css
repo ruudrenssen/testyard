@@ -3,8 +3,6 @@ table {
     --cell-padding: var(--size-s);
     --line-height: var(--size-xl);
 
-    margin: -1px;
-    
     text-align: right;
     font-variant-numeric: tabular-nums;
 
@@ -18,7 +16,6 @@ caption {
     
     caption-side: top;
 
-    margin: 0 var(--cell-spacing);
     padding: var(--cell-padding);
 
     background-color: var(--color-section-3);
@@ -80,8 +77,6 @@ main > table:only-child caption {
     top: 0;
 
     caption-side: top;
-
-    outline: var(--cell-spacing) solid var(--color-background);
 }
 
 main > table:only-child caption span {
@@ -96,7 +91,7 @@ main > table:only-child tfoot {
 }
 
 main > table:only-child thead {
-    top: calc(var(--size-xl) + 2 * var(--cell-padding) + var(--cell-spacing));
+    top: calc(var(--size-xl) + 2 * var(--cell-padding));
 }
 
 main > table:only-child tfoot {
