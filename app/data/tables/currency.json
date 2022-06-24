@@ -1,0 +1,88 @@
+{
+  "caption": "Currency formatting",
+  "intl": "NumberFormat",
+  "value": -123456789.12345,
+  "options": [
+    {
+      "property": "notation",
+      "title": "Notation",
+      "options": [
+        "standard",
+        "scientific",
+        "engineering",
+        "compact"
+      ]
+    },
+    {
+      "property": "style",
+      "title": "Currency Display",
+      "options": [
+        {
+          "value": "currency",
+          "title": "Currency",
+          "options": {
+            "currency": "EUR",
+            "currencyDisplay": "symbol"
+          }
+        },
+        {
+          "value": "currency",
+          "title": "Currency",
+          "options": {
+            "currency": "EUR",
+            "currencyDisplay": "narrowSymbol"
+          }
+        },
+        {
+          "value": "currency",
+          "title": "Currency",
+          "options": {
+            "currency": "EUR",
+            "currencyDisplay": "code"
+          }
+        },
+        {
+          "value": "currency",
+          "title": "Currency",
+          "options": {
+            "currency": "EUR",
+            "currencyDisplay": "name"
+          }
+        }
+      ]
+    },
+    {
+      "property": "style",
+      "title": "Currency Sign",
+      "options": [
+        {
+          "value": "currency",
+          "title": "Currency",
+          "options": {
+            "currency": "JPY",
+            "currencyDisplay": "symbol",
+            "currencySign": "accounting"
+          }
+        },
+        {
+          "value": "currency",
+          "title": "Currency",
+          "options": {
+            "currency": "JPY",
+            "currencyDisplay": "narrowSymbol",
+            "currencySign": "accounting"
+          }
+        },
+        {
+          "value": "currency",
+          "title": "Currency",
+          "options": {
+            "currency": "JPY",
+            "currencyDisplay": "code",
+            "currencySign": "accounting"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,263 +1,81 @@
 <table>
 	<caption>
-		<span>
-			Test table
-		</span>
+		<span>Example table: {{ tables.[0].caption }}</span>
 	</caption>
-	<colgroup>
-		<col>
-		<col span="2">
-		<col span="2">
-		<col>
-		<col>
-	</colgroup>
+	
+	{{#each tables.[0].colgroups as |colgroup|}}
+		<colgroup>
+			{{#each colgroup}}
+			<col>
+			{{/each}}
+		</colgroup>
+	{{/each}}
+	
+	{{#if tables.[0].header}}
+		<thead>
+			<th></th>
+			{{#each tables.[0].header as |header|}}
+				<th>{{ header }}</th>
+			{{/each}}
+		</thead>
+	{{/if}}
+
 	<thead>
 		<tr>
-			<th></th>
-			<th scope="col">Col 1</th>
-			<th scope="col">Col 2</th>
-			<th scope="col">Col 3</th>
-			<th scope="col">Col 4</th>
-			<th scope="col">Col 5</th>
-			<th scope="col">Col 6</th>
+			<th scope="col">Country - language</th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
 		</tr>
 	</thead>
+	
 	<tbody>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
-		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
-		</tr>
+		{{#each tables.[0].body as |row|}}
+			<tr>
+				{{#each row as |colgroup|}}
+					{{#if @first}}
+						{{#each colgroup as |col|}}
+								<th>{{ col.country }} - {{ col.language }}</th>
+						{{/each}}
+					{{else}}
+						{{#each colgroup as |col|}}
+							<td>{{ col }}</td>
+						{{/each}}
+					{{/if}}
+				{{/each}}			
+			</tr>
+		{{/each}}
 	</tbody>
+
 	<tfoot>
 		<tr>
-			<th scope="row">Bladiebla</th>
-			<td>66.66</td>
-			<td>123,321,321.22</td>
-			<td>1,983</td>
-			<td>+ 12,967.03</td>
-			<td>− 12,967.03</td>
-			<td>8.32%</td>
+			<th scope="col">Total</th>
+			<th scope="col"></th>
+			<th scope="col">ges</th>
+			<th scope="col"></th>
+			<th scope="col">ergs</th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col">esgr</th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			<th scope="col"></th>
 		</tr>
 	</tfoot>
+	
+	{{#if tables.[0].footer}}
+	<tfoot>
+		<tr>
+		</tr>
+	</tfoot>
+	{{/if}}
 </table>

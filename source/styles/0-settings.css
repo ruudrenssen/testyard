@@ -14,7 +14,7 @@
 	--weight-semibold: 600;
 	--weight-bold: 700;
 
-	--size-default: clamp(0.975em, 1.125vw, 1.25em);
+	--size-default: clamp(0.975rem, 1.125vw, 1.125rem);
 	--size-s: calc(var(--size-default) / var(--factor));
 	--size-l: calc(var(--size-default) * var(--factor));
 	--size-xl: calc(var(--size-l) * var(--factor));
@@ -31,7 +31,7 @@
 	--border-width: 1px;
 
 	/* Colors */
-	--hue: 44;
+	--hue: 25;
 
 	--color: hsl(var(--hue), 100%, 50%);
 	--color-semi: hsla(var(--hue), 100%, 50%, 50%);
@@ -41,10 +41,10 @@
 	--light-2: hsl(var(--hue), 10%, 90%);
 	--light-3: hsl(var(--hue), 10%, 85%);
 	--light-4: hsl(var(--hue), 10%, 80%);
-	--dark: hsl(var(--hue), 5%, 5%);
+	--dark: hsl(var(--hue), 10%, 5%);
 	--dark-2: hsl(var(--hue), 10%, 10%);
-	--dark-3: hsl(var(--hue), 10%, 15%);
-	--dark-4: hsl(var(--hue), 10%, 20%);
+	--dark-3: hsl(var(--hue), 10%, 12.5%);
+	--dark-4: hsl(var(--hue), 10%, 15%);
 
 	--color-action: var(--color);
 	--color-text: var(--dark);

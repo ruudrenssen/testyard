@@ -1,0 +1,1472 @@
+[
+  {
+    "country": "Afghanistan",
+    "language": "Pashto",
+    "twoLetterLangCode": "ps",
+    "threeLetterLangCode": "pus",
+    "cultureInfoCode": "ps-AF"
+  },
+  {
+    "country": "Afghanistan",
+    "language": "Dari",
+    "twoLetterLangCode": "prs",
+    "threeLetterLangCode": "prs",
+    "cultureInfoCode": "prs-AF"
+  },
+  {
+    "country": "Albania",
+    "language": "Albanian",
+    "twoLetterLangCode": "sq",
+    "threeLetterLangCode": "sqi",
+    "cultureInfoCode": "sq-AL"
+  },
+  {
+    "country": "Algeria",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-DZ"
+  },
+  {
+    "country": "Argentina",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-AR"
+  },
+  {
+    "country": "Armenia",
+    "language": "Armenian",
+    "twoLetterLangCode": "hy",
+    "threeLetterLangCode": "hye",
+    "cultureInfoCode": "hy-AM"
+  },
+  {
+    "country": "Australia",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-AU"
+  },
+  {
+    "country": "Austria",
+    "language": "German",
+    "twoLetterLangCode": "de",
+    "threeLetterLangCode": "deu",
+    "cultureInfoCode": "de-AT"
+  },
+  {
+    "country": "Bahrain",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-BH"
+  },
+  {
+    "country": "Bangladesh",
+    "language": "Bengali",
+    "twoLetterLangCode": "bn",
+    "threeLetterLangCode": "bng",
+    "cultureInfoCode": "bn-BD"
+  },
+  {
+    "country": "Basque",
+    "language": "Basque",
+    "twoLetterLangCode": "eu",
+    "threeLetterLangCode": "eus",
+    "cultureInfoCode": "eu-ES"
+  },
+  {
+    "country": "Belarus",
+    "language": "Belarusian",
+    "twoLetterLangCode": "be",
+    "threeLetterLangCode": "bel",
+    "cultureInfoCode": "be-BY"
+  },
+  {
+    "country": "Belgium",
+    "language": "French",
+    "twoLetterLangCode": "fr",
+    "threeLetterLangCode": "fra",
+    "cultureInfoCode": "fr-BE"
+  },
+  {
+    "country": "Belgium",
+    "language": "Dutch",
+    "twoLetterLangCode": "nl",
+    "threeLetterLangCode": "nld",
+    "cultureInfoCode": "nl-BE"
+  },
+  {
+    "country": "Belize",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-BZ"
+  },
+  {
+    "country": "Bolivarian Republic of Venezuela",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-VE"
+  },
+  {
+    "country": "Bolivia",
+    "language": "Quechua",
+    "twoLetterLangCode": "quz",
+    "threeLetterLangCode": "qub",
+    "cultureInfoCode": "quz-BO"
+  },
+  {
+    "country": "Bolivia",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-BO"
+  },
+  {
+    "country": "Brazil",
+    "language": "Portuguese",
+    "twoLetterLangCode": "pt",
+    "threeLetterLangCode": "por",
+    "cultureInfoCode": "pt-BR"
+  },
+  {
+    "country": "Brunei Darussalam",
+    "language": "Malay",
+    "twoLetterLangCode": "ms",
+    "threeLetterLangCode": "msa",
+    "cultureInfoCode": "ms-BN"
+  },
+  {
+    "country": "Bulgaria",
+    "language": "Bulgarian",
+    "twoLetterLangCode": "bg",
+    "threeLetterLangCode": "bul",
+    "cultureInfoCode": "bg-BG"
+  },
+  {
+    "country": "Cambodia",
+    "language": "Khmer",
+    "twoLetterLangCode": "km",
+    "threeLetterLangCode": "khm",
+    "cultureInfoCode": "km-KH"
+  },
+  {
+    "country": "Canada",
+    "language": "French",
+    "twoLetterLangCode": "fr",
+    "threeLetterLangCode": "fra",
+    "cultureInfoCode": "fr-CA"
+  },
+  {
+    "country": "Canada",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-CA"
+  },
+  {
+    "country": "Caribbean",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-029"
+  },
+  {
+    "country": "Catalan",
+    "language": "Catalan",
+    "twoLetterLangCode": "ca",
+    "threeLetterLangCode": "cat",
+    "cultureInfoCode": "ca-ES"
+  },
+  {
+    "country": "Chile",
+    "language": "Mapudungun",
+    "twoLetterLangCode": "arn",
+    "threeLetterLangCode": "arn",
+    "cultureInfoCode": "arn-CL"
+  },
+  {
+    "country": "Chile",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-CL"
+  },
+  {
+    "country": "Colombia",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-CO"
+  },
+  {
+    "country": "Costa Rica",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-CR"
+  },
+  {
+    "country": "Croatia",
+    "language": "Croatian",
+    "twoLetterLangCode": "hr",
+    "threeLetterLangCode": "hrv",
+    "cultureInfoCode": "hr-HR"
+  },
+  {
+    "country": "Cyrillic, Azerbaijan",
+    "language": "Azeri",
+    "twoLetterLangCode": "az",
+    "threeLetterLangCode": "aze",
+    "cultureInfoCode": "az-Cyrl-AZ"
+  },
+  {
+    "country": "Cyrillic, Bosnia and Herzegovina",
+    "language": "Serbian",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srn",
+    "cultureInfoCode": "sr-Cyrl-BA"
+  },
+  {
+    "country": "Cyrillic, Bosnia and Herzegovina",
+    "language": "Bosnian",
+    "twoLetterLangCode": "bs",
+    "threeLetterLangCode": "bsc",
+    "cultureInfoCode": "bs-Cyrl-BA"
+  },
+  {
+    "country": "Cyrillic, Mongolia",
+    "language": "Mongolian",
+    "twoLetterLangCode": "mn",
+    "threeLetterLangCode": "mon",
+    "cultureInfoCode": "mn-MN"
+  },
+  {
+    "country": "Cyrillic, Montenegro",
+    "language": "Serbian",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srp",
+    "cultureInfoCode": "sr-Cyrl-ME"
+  },
+  {
+    "country": "Cyrillic, Serbia",
+    "language": "Serbian",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srp",
+    "cultureInfoCode": "sr-Cyrl-RS"
+  },
+  {
+    "country": "Cyrillic, Serbia and Montenegro (Former",
+    "language": "Serbian )",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srp",
+    "cultureInfoCode": "sr-Cyrl-CS"
+  },
+  {
+    "country": "Cyrillic, Tajikistan",
+    "language": "Tajik",
+    "twoLetterLangCode": "tg",
+    "threeLetterLangCode": "tgk",
+    "cultureInfoCode": "tg-Cyrl-TJ"
+  },
+  {
+    "country": "Cyrillic, Uzbekistan",
+    "language": "Uzbek",
+    "twoLetterLangCode": "uz",
+    "threeLetterLangCode": "uzb",
+    "cultureInfoCode": "uz-Cyrl-UZ"
+  },
+  {
+    "country": "Czech Republic",
+    "language": "Czech",
+    "twoLetterLangCode": "cs",
+    "threeLetterLangCode": "ces",
+    "cultureInfoCode": "cs-CZ"
+  },
+  {
+    "country": "Denmark",
+    "language": "Danish",
+    "twoLetterLangCode": "da",
+    "threeLetterLangCode": "dan",
+    "cultureInfoCode": "da-DK"
+  },
+  {
+    "country": "Dominican Republic",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-DO"
+  },
+  {
+    "country": "Ecuador",
+    "language": "Quechua",
+    "twoLetterLangCode": "quz",
+    "threeLetterLangCode": "que",
+    "cultureInfoCode": "quz-EC"
+  },
+  {
+    "country": "Ecuador",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-EC"
+  },
+  {
+    "country": "Egypt",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-EG"
+  },
+  {
+    "country": "El Salvador",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-SV"
+  },
+  {
+    "country": "Estonia",
+    "language": "Estonian",
+    "twoLetterLangCode": "et",
+    "threeLetterLangCode": "est",
+    "cultureInfoCode": "et-EE"
+  },
+  {
+    "country": "Ethiopia",
+    "language": "Amharic",
+    "twoLetterLangCode": "am",
+    "threeLetterLangCode": "amh",
+    "cultureInfoCode": "am-ET"
+  },
+  {
+    "country": "Faroe Islands",
+    "language": "Faroese",
+    "twoLetterLangCode": "fo",
+    "threeLetterLangCode": "fao",
+    "cultureInfoCode": "fo-FO"
+  },
+  {
+    "country": "Finland",
+    "language": "Finnish",
+    "twoLetterLangCode": "fi",
+    "threeLetterLangCode": "fin",
+    "cultureInfoCode": "fi-FI"
+  },
+  {
+    "country": "Finland",
+    "language": "Swedish",
+    "twoLetterLangCode": "sv",
+    "threeLetterLangCode": "swe",
+    "cultureInfoCode": "sv-FI"
+  },
+  {
+    "country": "Finland",
+    "language": "Sami, Northern",
+    "twoLetterLangCode": "se",
+    "threeLetterLangCode": "smg",
+    "cultureInfoCode": "se-FI"
+  },
+  {
+    "country": "Finland",
+    "language": "Sami, Skolt",
+    "twoLetterLangCode": "sms",
+    "threeLetterLangCode": "sms",
+    "cultureInfoCode": "sms-FI"
+  },
+  {
+    "country": "Finland",
+    "language": "Sami, Inari",
+    "twoLetterLangCode": "smn",
+    "threeLetterLangCode": "smn",
+    "cultureInfoCode": "smn-FI"
+  },
+  {
+    "country": "Former Yugoslav Republic of Macedonia",
+    "language": "Macedonian",
+    "twoLetterLangCode": "mk",
+    "threeLetterLangCode": "mkd",
+    "cultureInfoCode": "mk-MK"
+  },
+  {
+    "country": "France",
+    "language": "French",
+    "twoLetterLangCode": "fr",
+    "threeLetterLangCode": "fra",
+    "cultureInfoCode": "fr-FR"
+  },
+  {
+    "country": "France",
+    "language": "Breton",
+    "twoLetterLangCode": "br",
+    "threeLetterLangCode": "bre",
+    "cultureInfoCode": "br-FR"
+  },
+  {
+    "country": "France",
+    "language": "Occitan",
+    "twoLetterLangCode": "oc",
+    "threeLetterLangCode": "oci",
+    "cultureInfoCode": "oc-FR"
+  },
+  {
+    "country": "France",
+    "language": "Corsican",
+    "twoLetterLangCode": "co",
+    "threeLetterLangCode": "cos",
+    "cultureInfoCode": "co-FR"
+  },
+  {
+    "country": "France",
+    "language": "Alsatian",
+    "twoLetterLangCode": "gsw",
+    "threeLetterLangCode": "gsw",
+    "cultureInfoCode": "gsw-FR"
+  },
+  {
+    "country": "Galician",
+    "language": "Galician",
+    "twoLetterLangCode": "gl",
+    "threeLetterLangCode": "glg",
+    "cultureInfoCode": "gl-ES"
+  },
+  {
+    "country": "Georgia",
+    "language": "Georgian",
+    "twoLetterLangCode": "ka",
+    "threeLetterLangCode": "kat",
+    "cultureInfoCode": "ka-GE"
+  },
+  {
+    "country": "Germany",
+    "language": "German",
+    "twoLetterLangCode": "de",
+    "threeLetterLangCode": "deu",
+    "cultureInfoCode": "de-DE"
+  },
+  {
+    "country": "Germany",
+    "language": "Upper Sorbian",
+    "twoLetterLangCode": "hsb",
+    "threeLetterLangCode": "hsb",
+    "cultureInfoCode": "hsb-DE"
+  },
+  {
+    "country": "Germany",
+    "language": "Lower Sorbian",
+    "twoLetterLangCode": "dsb",
+    "threeLetterLangCode": "dsb",
+    "cultureInfoCode": "dsb-DE"
+  },
+  {
+    "country": "Greece",
+    "language": "Greek",
+    "twoLetterLangCode": "el",
+    "threeLetterLangCode": "ell",
+    "cultureInfoCode": "el-GR"
+  },
+  {
+    "country": "Greenland",
+    "language": "Greenlandic",
+    "twoLetterLangCode": "kl",
+    "threeLetterLangCode": "kal",
+    "cultureInfoCode": "kl-GL"
+  },
+  {
+    "country": "Guatemala",
+    "language": "K'iche",
+    "twoLetterLangCode": "qut",
+    "threeLetterLangCode": "qut",
+    "cultureInfoCode": "qut-GT"
+  },
+  {
+    "country": "Guatemala",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-GT"
+  },
+  {
+    "country": "Honduras",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-HN"
+  },
+  {
+    "country": "Hungary",
+    "language": "Hungarian",
+    "twoLetterLangCode": "hu",
+    "threeLetterLangCode": "hun",
+    "cultureInfoCode": "hu-HU"
+  },
+  {
+    "country": "Iceland",
+    "language": "Icelandic",
+    "twoLetterLangCode": "is",
+    "threeLetterLangCode": "isl",
+    "cultureInfoCode": "is-IS"
+  },
+  {
+    "country": "India",
+    "language": "Hindi",
+    "twoLetterLangCode": "hi",
+    "threeLetterLangCode": "hin",
+    "cultureInfoCode": "hi-IN"
+  },
+  {
+    "country": "India",
+    "language": "Bengali",
+    "twoLetterLangCode": "bn",
+    "threeLetterLangCode": "bng",
+    "cultureInfoCode": "bn-IN"
+  },
+  {
+    "country": "India",
+    "language": "Punjabi",
+    "twoLetterLangCode": "pa",
+    "threeLetterLangCode": "pan",
+    "cultureInfoCode": "pa-IN"
+  },
+  {
+    "country": "India",
+    "language": "Gujarati",
+    "twoLetterLangCode": "gu",
+    "threeLetterLangCode": "guj",
+    "cultureInfoCode": "gu-IN"
+  },
+  {
+    "country": "India",
+    "language": "Oriya",
+    "twoLetterLangCode": "or",
+    "threeLetterLangCode": "ori",
+    "cultureInfoCode": "or-IN"
+  },
+  {
+    "country": "India",
+    "language": "Tamil",
+    "twoLetterLangCode": "ta",
+    "threeLetterLangCode": "tam",
+    "cultureInfoCode": "ta-IN"
+  },
+  {
+    "country": "India",
+    "language": "Telugu",
+    "twoLetterLangCode": "te",
+    "threeLetterLangCode": "tel",
+    "cultureInfoCode": "te-IN"
+  },
+  {
+    "country": "India",
+    "language": "Kannada",
+    "twoLetterLangCode": "kn",
+    "threeLetterLangCode": "kan",
+    "cultureInfoCode": "kn-IN"
+  },
+  {
+    "country": "India",
+    "language": "Malayalam",
+    "twoLetterLangCode": "ml",
+    "threeLetterLangCode": "mym",
+    "cultureInfoCode": "ml-IN"
+  },
+  {
+    "country": "India",
+    "language": "Assamese",
+    "twoLetterLangCode": "as",
+    "threeLetterLangCode": "asm",
+    "cultureInfoCode": "as-IN"
+  },
+  {
+    "country": "India",
+    "language": "Marathi",
+    "twoLetterLangCode": "mr",
+    "threeLetterLangCode": "mar",
+    "cultureInfoCode": "mr-IN"
+  },
+  {
+    "country": "India",
+    "language": "Sanskrit",
+    "twoLetterLangCode": "sa",
+    "threeLetterLangCode": "san",
+    "cultureInfoCode": "sa-IN"
+  },
+  {
+    "country": "India",
+    "language": "Konkani",
+    "twoLetterLangCode": "kok",
+    "threeLetterLangCode": "kok",
+    "cultureInfoCode": "kok-IN"
+  },
+  {
+    "country": "India",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-IN"
+  },
+  {
+    "country": "Indonesia",
+    "language": "Indonesian",
+    "twoLetterLangCode": "id",
+    "threeLetterLangCode": "ind",
+    "cultureInfoCode": "id-ID"
+  },
+  {
+    "country": "Iran",
+    "language": "Persian",
+    "twoLetterLangCode": "fa",
+    "threeLetterLangCode": "fas",
+    "cultureInfoCode": "fa-IR"
+  },
+  {
+    "country": "Iraq",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-IQ"
+  },
+  {
+    "country": "Ireland",
+    "language": "Irish",
+    "twoLetterLangCode": "ga",
+    "threeLetterLangCode": "gle",
+    "cultureInfoCode": "ga-IE"
+  },
+  {
+    "country": "Ireland",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-IE"
+  },
+  {
+    "country": "Islamic Republic of Pakistan",
+    "language": "Urdu",
+    "twoLetterLangCode": "ur",
+    "threeLetterLangCode": "urd",
+    "cultureInfoCode": "ur-PK"
+  },
+  {
+    "country": "Israel",
+    "language": "Hebrew",
+    "twoLetterLangCode": "he",
+    "threeLetterLangCode": "heb",
+    "cultureInfoCode": "he-IL"
+  },
+  {
+    "country": "Italy",
+    "language": "Italian",
+    "twoLetterLangCode": "it",
+    "threeLetterLangCode": "ita",
+    "cultureInfoCode": "it-IT"
+  },
+  {
+    "country": "Jamaica",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-JM"
+  },
+  {
+    "country": "Japan",
+    "language": "Japanese",
+    "twoLetterLangCode": "ja",
+    "threeLetterLangCode": "jpn",
+    "cultureInfoCode": "ja-JP"
+  },
+  {
+    "country": "Jordan",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-JO"
+  },
+  {
+    "country": "Kazakhstan",
+    "language": "Kazakh",
+    "twoLetterLangCode": "kk",
+    "threeLetterLangCode": "kaz",
+    "cultureInfoCode": "kk-KZ"
+  },
+  {
+    "country": "Kenya",
+    "language": "Kiswahili",
+    "twoLetterLangCode": "sw",
+    "threeLetterLangCode": "swa",
+    "cultureInfoCode": "sw-KE"
+  },
+  {
+    "country": "Korea",
+    "language": "Korean",
+    "twoLetterLangCode": "ko",
+    "threeLetterLangCode": "kor",
+    "cultureInfoCode": "ko-KR"
+  },
+  {
+    "country": "Kuwait",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-KW"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "language": "Kyrgyz",
+    "twoLetterLangCode": "ky",
+    "threeLetterLangCode": "kir",
+    "cultureInfoCode": "ky-KG"
+  },
+  {
+    "country": "Lao P.D.R.",
+    "language": "Lao",
+    "twoLetterLangCode": "lo",
+    "threeLetterLangCode": "lao",
+    "cultureInfoCode": "lo-LA"
+  },
+  {
+    "country": "Latin, Algeria",
+    "language": "Tamazight",
+    "twoLetterLangCode": "tzm",
+    "threeLetterLangCode": "tzm",
+    "cultureInfoCode": "tzm-Latn-DZ"
+  },
+  {
+    "country": "Latin, Azerbaijan",
+    "language": "Azeri",
+    "twoLetterLangCode": "az",
+    "threeLetterLangCode": "aze",
+    "cultureInfoCode": "az-Latn-AZ"
+  },
+  {
+    "country": "Latin, Bosnia and Herzegovina",
+    "language": "Croatian",
+    "twoLetterLangCode": "hr",
+    "threeLetterLangCode": "hrb",
+    "cultureInfoCode": "hr-BA"
+  },
+  {
+    "country": "Latin, Bosnia and Herzegovina",
+    "language": "Bosnian",
+    "twoLetterLangCode": "bs",
+    "threeLetterLangCode": "bsb",
+    "cultureInfoCode": "bs-Latn-BA"
+  },
+  {
+    "country": "Latin, Bosnia and Herzegovina",
+    "language": "Serbian",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srs",
+    "cultureInfoCode": "sr-Latn-BA"
+  },
+  {
+    "country": "Latin, Canada",
+    "language": "Inuktitut",
+    "twoLetterLangCode": "iu",
+    "threeLetterLangCode": "iku",
+    "cultureInfoCode": "iu-Latn-CA"
+  },
+  {
+    "country": "Latin, Montenegro",
+    "language": "Serbian",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srp",
+    "cultureInfoCode": "sr-Latn-ME"
+  },
+  {
+    "country": "Latin, Nigeria",
+    "language": "Hausa",
+    "twoLetterLangCode": "ha",
+    "threeLetterLangCode": "hau",
+    "cultureInfoCode": "ha-Latn-NG"
+  },
+  {
+    "country": "Latin, Serbia",
+    "language": "Serbian",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srp",
+    "cultureInfoCode": "sr-Latn-RS"
+  },
+  {
+    "country": "Latin, Serbia and Montenegro (Former",
+    "language": "Serbian )",
+    "twoLetterLangCode": "sr",
+    "threeLetterLangCode": "srp",
+    "cultureInfoCode": "sr-Latn-CS"
+  },
+  {
+    "country": "Latin, Uzbekistan",
+    "language": "Uzbek",
+    "twoLetterLangCode": "uz",
+    "threeLetterLangCode": "uzb",
+    "cultureInfoCode": "uz-Latn-UZ"
+  },
+  {
+    "country": "Latvia",
+    "language": "Latvian",
+    "twoLetterLangCode": "lv",
+    "threeLetterLangCode": "lav",
+    "cultureInfoCode": "lv-LV"
+  },
+  {
+    "country": "Lebanon",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-LB"
+  },
+  {
+    "country": "Libya",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-LY"
+  },
+  {
+    "country": "Liechtenstein",
+    "language": "German",
+    "twoLetterLangCode": "de",
+    "threeLetterLangCode": "deu",
+    "cultureInfoCode": "de-LI"
+  },
+  {
+    "country": "Lithuania",
+    "language": "Lithuanian",
+    "twoLetterLangCode": "lt",
+    "threeLetterLangCode": "lit",
+    "cultureInfoCode": "lt-LT"
+  },
+  {
+    "country": "Luxembourg",
+    "language": "Luxembourgish",
+    "twoLetterLangCode": "lb",
+    "threeLetterLangCode": "ltz",
+    "cultureInfoCode": "lb-LU"
+  },
+  {
+    "country": "Luxembourg",
+    "language": "German",
+    "twoLetterLangCode": "de",
+    "threeLetterLangCode": "deu",
+    "cultureInfoCode": "de-LU"
+  },
+  {
+    "country": "Luxembourg",
+    "language": "French",
+    "twoLetterLangCode": "fr",
+    "threeLetterLangCode": "fra",
+    "cultureInfoCode": "fr-LU"
+  },
+  {
+    "country": "Malaysia",
+    "language": "Malay",
+    "twoLetterLangCode": "ms",
+    "threeLetterLangCode": "msa",
+    "cultureInfoCode": "ms-MY"
+  },
+  {
+    "country": "Malaysia",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-MY"
+  },
+  {
+    "country": "Maldives",
+    "language": "Divehi",
+    "twoLetterLangCode": "dv",
+    "threeLetterLangCode": "div",
+    "cultureInfoCode": "dv-MV"
+  },
+  {
+    "country": "Malta",
+    "language": "Maltese",
+    "twoLetterLangCode": "mt",
+    "threeLetterLangCode": "mlt",
+    "cultureInfoCode": "mt-MT"
+  },
+  {
+    "country": "Mexico",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-MX"
+  },
+  {
+    "country": "Mohawk",
+    "language": "Mohawk",
+    "twoLetterLangCode": "moh",
+    "threeLetterLangCode": "moh",
+    "cultureInfoCode": "moh-CA"
+  },
+  {
+    "country": "Monaco",
+    "language": "French",
+    "twoLetterLangCode": "fr",
+    "threeLetterLangCode": "fra",
+    "cultureInfoCode": "fr-MC"
+  },
+  {
+    "country": "Morocco",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-MA"
+  },
+  {
+    "country": "Nepal",
+    "language": "Nepali",
+    "twoLetterLangCode": "ne",
+    "threeLetterLangCode": "nep",
+    "cultureInfoCode": "ne-NP"
+  },
+  {
+    "country": "Netherlands",
+    "language": "Dutch",
+    "twoLetterLangCode": "nl",
+    "threeLetterLangCode": "nld",
+    "cultureInfoCode": "nl-NL"
+  },
+  {
+    "country": "Netherlands",
+    "language": "Frisian",
+    "twoLetterLangCode": "fy",
+    "threeLetterLangCode": "fry",
+    "cultureInfoCode": "fy-NL"
+  },
+  {
+    "country": "New Zealand",
+    "language": "Maori",
+    "twoLetterLangCode": "mi",
+    "threeLetterLangCode": "mri",
+    "cultureInfoCode": "mi-NZ"
+  },
+  {
+    "country": "New Zealand",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-NZ"
+  },
+  {
+    "country": "Nicaragua",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-NI"
+  },
+  {
+    "country": "Nigeria",
+    "language": "Yoruba",
+    "twoLetterLangCode": "yo",
+    "threeLetterLangCode": "yor",
+    "cultureInfoCode": "yo-NG"
+  },
+  {
+    "country": "Nigeria",
+    "language": "Igbo",
+    "twoLetterLangCode": "ig",
+    "threeLetterLangCode": "ibo",
+    "cultureInfoCode": "ig-NG"
+  },
+  {
+    "country": "Norway",
+    "language": "Norwegian, Bokmål",
+    "twoLetterLangCode": "nb",
+    "threeLetterLangCode": "nob",
+    "cultureInfoCode": "nb-NO"
+  },
+  {
+    "country": "Norway",
+    "language": "Sami, Northern",
+    "twoLetterLangCode": "se",
+    "threeLetterLangCode": "sme",
+    "cultureInfoCode": "se-NO"
+  },
+  {
+    "country": "Norway",
+    "language": "Norwegian, Nynorsk",
+    "twoLetterLangCode": "nn",
+    "threeLetterLangCode": "nno",
+    "cultureInfoCode": "nn-NO"
+  },
+  {
+    "country": "Norway",
+    "language": "Sami, Lule",
+    "twoLetterLangCode": "smj",
+    "threeLetterLangCode": "smj",
+    "cultureInfoCode": "smj-NO"
+  },
+  {
+    "country": "Norway",
+    "language": "Sami, Southern",
+    "twoLetterLangCode": "sma",
+    "threeLetterLangCode": "sma",
+    "cultureInfoCode": "sma-NO"
+  },
+  {
+    "country": "Oman",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-OM"
+  },
+  {
+    "country": "Panama",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-PA"
+  },
+  {
+    "country": "Paraguay",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-PY"
+  },
+  {
+    "country": "Peru",
+    "language": "Quechua",
+    "twoLetterLangCode": "quz",
+    "threeLetterLangCode": "qup",
+    "cultureInfoCode": "quz-PE"
+  },
+  {
+    "country": "Peru",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-PE"
+  },
+  {
+    "country": "Philippines",
+    "language": "Filipino",
+    "twoLetterLangCode": "fil",
+    "threeLetterLangCode": "fil",
+    "cultureInfoCode": "fil-PH"
+  },
+  {
+    "country": "Poland",
+    "language": "Polish",
+    "twoLetterLangCode": "pl",
+    "threeLetterLangCode": "pol",
+    "cultureInfoCode": "pl-PL"
+  },
+  {
+    "country": "Portugal",
+    "language": "Portuguese",
+    "twoLetterLangCode": "pt",
+    "threeLetterLangCode": "por",
+    "cultureInfoCode": "pt-PT"
+  },
+  {
+    "country": "PRC",
+    "language": "Tibetan",
+    "twoLetterLangCode": "bo",
+    "threeLetterLangCode": "bod",
+    "cultureInfoCode": "bo-CN"
+  },
+  {
+    "country": "PRC",
+    "language": "Yi",
+    "twoLetterLangCode": "ii",
+    "threeLetterLangCode": "iii",
+    "cultureInfoCode": "ii-CN"
+  },
+  {
+    "country": "PRC",
+    "language": "Uyghur",
+    "twoLetterLangCode": "ug",
+    "threeLetterLangCode": "uig",
+    "cultureInfoCode": "ug-CN"
+  },
+  {
+    "country": "Puerto Rico",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-PR"
+  },
+  {
+    "country": "Qatar",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-QA"
+  },
+  {
+    "country": "Republic of the Philippines",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-PH"
+  },
+  {
+    "country": "Romania",
+    "language": "Romanian",
+    "twoLetterLangCode": "ro",
+    "threeLetterLangCode": "ron",
+    "cultureInfoCode": "ro-RO"
+  },
+  {
+    "country": "Russia",
+    "language": "Russian",
+    "twoLetterLangCode": "ru",
+    "threeLetterLangCode": "rus",
+    "cultureInfoCode": "ru-RU"
+  },
+  {
+    "country": "Russia",
+    "language": "Tatar",
+    "twoLetterLangCode": "tt",
+    "threeLetterLangCode": "tat",
+    "cultureInfoCode": "tt-RU"
+  },
+  {
+    "country": "Russia",
+    "language": "Bashkir",
+    "twoLetterLangCode": "ba",
+    "threeLetterLangCode": "bak",
+    "cultureInfoCode": "ba-RU"
+  },
+  {
+    "country": "Russia",
+    "language": "Yakut",
+    "twoLetterLangCode": "sah",
+    "threeLetterLangCode": "sah",
+    "cultureInfoCode": "sah-RU"
+  },
+  {
+    "country": "Rwanda",
+    "language": "Kinyarwanda",
+    "twoLetterLangCode": "rw",
+    "threeLetterLangCode": "kin",
+    "cultureInfoCode": "rw-RW"
+  },
+  {
+    "country": "Saudi Arabia",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-SA"
+  },
+  {
+    "country": "Senegal",
+    "language": "Wolof",
+    "twoLetterLangCode": "wo",
+    "threeLetterLangCode": "wol",
+    "cultureInfoCode": "wo-SN"
+  },
+  {
+    "country": "Simplified, PRC",
+    "language": "Chinese",
+    "twoLetterLangCode": "zh",
+    "threeLetterLangCode": "zho",
+    "cultureInfoCode": "zh-CN"
+  },
+  {
+    "country": "Simplified, Singapore",
+    "language": "Chinese",
+    "twoLetterLangCode": "zh",
+    "threeLetterLangCode": "zho",
+    "cultureInfoCode": "zh-SG"
+  },
+  {
+    "country": "Singapore",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-SG"
+  },
+  {
+    "country": "Slovakia",
+    "language": "Slovak",
+    "twoLetterLangCode": "sk",
+    "threeLetterLangCode": "slk",
+    "cultureInfoCode": "sk-SK"
+  },
+  {
+    "country": "Slovenia",
+    "language": "Slovenian",
+    "twoLetterLangCode": "sl",
+    "threeLetterLangCode": "slv",
+    "cultureInfoCode": "sl-SI"
+  },
+  {
+    "country": "South Africa",
+    "language": "Setswana",
+    "twoLetterLangCode": "tn",
+    "threeLetterLangCode": "tsn",
+    "cultureInfoCode": "tn-ZA"
+  },
+  {
+    "country": "South Africa",
+    "language": "isiXhosa",
+    "twoLetterLangCode": "xh",
+    "threeLetterLangCode": "xho",
+    "cultureInfoCode": "xh-ZA"
+  },
+  {
+    "country": "South Africa",
+    "language": "isiZulu",
+    "twoLetterLangCode": "zu",
+    "threeLetterLangCode": "zul",
+    "cultureInfoCode": "zu-ZA"
+  },
+  {
+    "country": "South Africa",
+    "language": "Afrikaans",
+    "twoLetterLangCode": "af",
+    "threeLetterLangCode": "afr",
+    "cultureInfoCode": "af-ZA"
+  },
+  {
+    "country": "South Africa",
+    "language": "Sesotho sa Leboa",
+    "twoLetterLangCode": "nso",
+    "threeLetterLangCode": "nso",
+    "cultureInfoCode": "nso-ZA"
+  },
+  {
+    "country": "South Africa",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-ZA"
+  },
+  {
+    "country": "Spain, International Sort",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-ES"
+  },
+  {
+    "country": "Sri Lanka",
+    "language": "Sinhala",
+    "twoLetterLangCode": "si",
+    "threeLetterLangCode": "sin",
+    "cultureInfoCode": "si-LK"
+  },
+  {
+    "country": "Sweden",
+    "language": "Swedish",
+    "twoLetterLangCode": "sv",
+    "threeLetterLangCode": "swe",
+    "cultureInfoCode": "sv-SE"
+  },
+  {
+    "country": "Sweden",
+    "language": "Sami, Northern",
+    "twoLetterLangCode": "se",
+    "threeLetterLangCode": "smf",
+    "cultureInfoCode": "se-SE"
+  },
+  {
+    "country": "Sweden",
+    "language": "Sami, Lule",
+    "twoLetterLangCode": "smj",
+    "threeLetterLangCode": "smk",
+    "cultureInfoCode": "smj-SE"
+  },
+  {
+    "country": "Sweden",
+    "language": "Sami, Southern",
+    "twoLetterLangCode": "sma",
+    "threeLetterLangCode": "smb",
+    "cultureInfoCode": "sma-SE"
+  },
+  {
+    "country": "Switzerland",
+    "language": "Romansh",
+    "twoLetterLangCode": "rm",
+    "threeLetterLangCode": "roh",
+    "cultureInfoCode": "rm-CH"
+  },
+  {
+    "country": "Switzerland",
+    "language": "German",
+    "twoLetterLangCode": "de",
+    "threeLetterLangCode": "deu",
+    "cultureInfoCode": "de-CH"
+  },
+  {
+    "country": "Switzerland",
+    "language": "Italian",
+    "twoLetterLangCode": "it",
+    "threeLetterLangCode": "ita",
+    "cultureInfoCode": "it-CH"
+  },
+  {
+    "country": "Switzerland",
+    "language": "French",
+    "twoLetterLangCode": "fr",
+    "threeLetterLangCode": "fra",
+    "cultureInfoCode": "fr-CH"
+  },
+  {
+    "country": "Syllabics, Canada",
+    "language": "Inuktitut",
+    "twoLetterLangCode": "iu",
+    "threeLetterLangCode": "iku",
+    "cultureInfoCode": "iu-Cans-CA"
+  },
+  {
+    "country": "Syria",
+    "language": "Syriac",
+    "twoLetterLangCode": "syr",
+    "threeLetterLangCode": "syr",
+    "cultureInfoCode": "syr-SY"
+  },
+  {
+    "country": "Syria",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-SY"
+  },
+  {
+    "country": "Thailand",
+    "language": "Thai",
+    "twoLetterLangCode": "th",
+    "threeLetterLangCode": "tha",
+    "cultureInfoCode": "th-TH"
+  },
+  {
+    "country": "Traditional Mongolian, PRC",
+    "language": "Mongolian",
+    "twoLetterLangCode": "mn",
+    "threeLetterLangCode": "mon",
+    "cultureInfoCode": "mn-Mong-CN"
+  },
+  {
+    "country": "Traditional, Hong Kong S.A.R.",
+    "language": "Chinese",
+    "twoLetterLangCode": "zh",
+    "threeLetterLangCode": "zho",
+    "cultureInfoCode": "zh-HK"
+  },
+  {
+    "country": "Traditional, Macao S.A.R.",
+    "language": "Chinese",
+    "twoLetterLangCode": "zh",
+    "threeLetterLangCode": "zho",
+    "cultureInfoCode": "zh-MO"
+  },
+  {
+    "country": "Traditional, Taiwan",
+    "language": "Chinese",
+    "twoLetterLangCode": "zh",
+    "threeLetterLangCode": "zho",
+    "cultureInfoCode": "zh-TW"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-TT"
+  },
+  {
+    "country": "Tunisia",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-TN"
+  },
+  {
+    "country": "Turkey",
+    "language": "Turkish",
+    "twoLetterLangCode": "tr",
+    "threeLetterLangCode": "tur",
+    "cultureInfoCode": "tr-TR"
+  },
+  {
+    "country": "Turkmenistan",
+    "language": "Turkmen",
+    "twoLetterLangCode": "tk",
+    "threeLetterLangCode": "tuk",
+    "cultureInfoCode": "tk-TM"
+  },
+  {
+    "country": "U.A.E.",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-AE"
+  },
+  {
+    "country": "Ukraine",
+    "language": "Ukrainian",
+    "twoLetterLangCode": "uk",
+    "threeLetterLangCode": "ukr",
+    "cultureInfoCode": "uk-UA"
+  },
+  {
+    "country": "United Kingdom",
+    "language": "Welsh",
+    "twoLetterLangCode": "cy",
+    "threeLetterLangCode": "cym",
+    "cultureInfoCode": "cy-GB"
+  },
+  {
+    "country": "United Kingdom",
+    "language": "Scottish Gaelic",
+    "twoLetterLangCode": "gd",
+    "threeLetterLangCode": "gla",
+    "cultureInfoCode": "gd-GB"
+  },
+  {
+    "country": "United Kingdom",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-GB"
+  },
+  {
+    "country": "United States",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-US"
+  },
+  {
+    "country": "United States",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-US"
+  },
+  {
+    "country": "Uruguay",
+    "language": "Spanish",
+    "twoLetterLangCode": "es",
+    "threeLetterLangCode": "spa",
+    "cultureInfoCode": "es-UY"
+  },
+  {
+    "country": "Vietnam",
+    "language": "Vietnamese",
+    "twoLetterLangCode": "vi",
+    "threeLetterLangCode": "vie",
+    "cultureInfoCode": "vi-VN"
+  },
+  {
+    "country": "Yemen",
+    "language": "Arabic",
+    "twoLetterLangCode": "ar",
+    "threeLetterLangCode": "ara",
+    "cultureInfoCode": "ar-YE"
+  },
+  {
+    "country": "Zimbabwe",
+    "language": "English",
+    "twoLetterLangCode": "en",
+    "threeLetterLangCode": "eng",
+    "cultureInfoCode": "en-ZW"
+  }
+]
