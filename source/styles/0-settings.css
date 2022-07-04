@@ -64,6 +64,8 @@
 
 	font: var(--style) var(--variant) var(--weight) var(--size)/var(--line-height) var(--family);
 	color: var(--color-text);
+
+	scrollbar-width: var(--size-default);
 }
 
 @media (prefers-color-scheme: dark) {
