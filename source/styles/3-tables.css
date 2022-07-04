@@ -1,12 +1,13 @@
 table {
-    --cell-spacing: var(--border-width);
+    /* --cell-spacing: var(--border-width); */
+    --cell-spacing: 10px;
     --cell-padding: var(--size-s);
     --line-height: var(--size-xl);
 
     text-align: right;
     font-variant-numeric: tabular-nums;
 
-    border-spacing: var(--border-width);
+    border-spacing: var(--cell-spacing);
     background-color: var(--color-background);
 }
 
@@ -16,9 +17,8 @@ caption {
     
     caption-side: top;
 
+    margin: 0;
     padding: var(--cell-padding);
-
-    background-color: var(--color-section-3);
 
     text-align: left;
 }
@@ -75,13 +75,14 @@ main > table:only-child caption {
     position: sticky;
     z-index: 3;
     top: 0;
+    left: var(--cell-spacing);
+    width: calc(100vw - 4 * var(--cell-spacing));
 
     caption-side: top;
-}
 
-main > table:only-child caption span {
-    position: sticky;
-    left: var(--cell-padding);
+    background-color: var(--color-background);
+
+    outline: var(--cell-spacing) solid red;
 }
 
 main > table:only-child thead,
@@ -90,18 +91,29 @@ main > table:only-child tfoot {
     z-index: 2;
 }
 
+main > table:only-child thead th,
+main > table:only-child thead td,
+main > table:only-child tfoot th,
+main > table:only-child tfoot td,
+main > table:only-child tbody th:first-child
+{
+    outline: var(--cell-spacing) solid red;
+}
+
 main > table:only-child thead {
-    top: calc(var(--size-xl) + 2 * var(--cell-padding));
+    top: calc(var(--size-xl) + 2 * var(--cell-padding) + 1 * var(--cell-spacing));
 }
 
 main > table:only-child tfoot {
     bottom: 0;
 }
 
+/* margin-bottom: var(--cell-spacing); */
+
 main > table:only-child th:first-child {
     position: sticky;
     z-index: 1;
-    left: 0;
+    left: var(--cell-spacing);
 
     background-color: var(--color-section-2);
 }
