@@ -51,8 +51,6 @@ td {
 
 td {
     --family: var(--family-mono);
-
-    white-space: nowrap;
 }
 
 th:first-child {
@@ -75,14 +73,17 @@ main > table:only-child caption {
     position: sticky;
     z-index: 3;
     top: 0;
-    left: 0;
-    width: calc(100vw - 4 * var(--cell-spacing) - 2 * var(--cell-padding));
 
     caption-side: top;
 
     background-color: var(--color-background);
 
     outline: var(--cell-spacing) solid var(--color-background);
+}
+
+main > table:only-child caption span {
+    position: sticky;
+    left: var(--cell-padding);
 }
 
 main > table:only-child thead,
