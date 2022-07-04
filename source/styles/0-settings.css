@@ -28,7 +28,7 @@
 	--size: var(--size-default);
 	--weight: var(--weight-regular);
 	--line-height: var(--factor);
-	--border-width: 1px;
+	--border-width: 2px;
 
 	/* Colors */
 	--hue: 25;

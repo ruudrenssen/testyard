@@ -1,6 +1,6 @@
 table {
     /* --cell-spacing: var(--border-width); */
-    --cell-spacing: 10px;
+    --cell-spacing: var(--border-width);
     --cell-padding: var(--size-s);
     --line-height: var(--size-xl);
 
@@ -75,14 +75,14 @@ main > table:only-child caption {
     position: sticky;
     z-index: 3;
     top: 0;
-    left: var(--cell-spacing);
-    width: calc(100vw - 4 * var(--cell-spacing));
+    left: 0;
+    width: calc(100vw - 4 * var(--cell-spacing) - 2 * var(--cell-padding));
 
     caption-side: top;
 
     background-color: var(--color-background);
 
-    outline: var(--cell-spacing) solid red;
+    outline: var(--cell-spacing) solid var(--color-background);
 }
 
 main > table:only-child thead,
@@ -97,7 +97,7 @@ main > table:only-child tfoot th,
 main > table:only-child tfoot td,
 main > table:only-child tbody th:first-child
 {
-    outline: var(--cell-spacing) solid red;
+    outline: var(--cell-spacing) solid var(--color-background);
 }
 
 main > table:only-child thead {
@@ -107,8 +107,6 @@ main > table:only-child thead {
 main > table:only-child tfoot {
     bottom: 0;
 }
-
-/* margin-bottom: var(--cell-spacing); */
 
 main > table:only-child th:first-child {
     position: sticky;
