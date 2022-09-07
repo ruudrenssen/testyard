@@ -13,29 +13,12 @@
 	
 	{{#if tables.[0].header}}
 		<thead>
-			<th></th>
+			<th scope="col">Country - language</th>
 			{{#each tables.[0].header as |header|}}
 				<th>{{ header }}</th>
 			{{/each}}
 		</thead>
 	{{/if}}
-
-	<thead>
-		<tr>
-			<th scope="col">Country - language</th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-			<th scope="col"></th>
-		</tr>
-	</thead>
 	
 	<tbody>
 		{{#each tables.[0].body as |row|}}

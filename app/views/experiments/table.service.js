@@ -13,11 +13,18 @@ const getColgroups = function (options) {
 
 const getHeaders = function(options) {
     const headers = [];
+
     options.forEach(option => {
-        if (option.options[0]?.options) {
-            
-        }
+      console.log(option);
+      if (option.options[0]?.options) {
+        // has nested options
+        headers.push(...option.options.map(value => value.title));
+      } else {
+        headers.push(...option.options);
+      }
     });
+
+    return headers;
 }
 
 const buildTable = function (model) {

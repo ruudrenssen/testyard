@@ -73,24 +73,33 @@ main > table:only-child {
 main > table:only-child caption {
     position: sticky;
     z-index: 3;
-    top: var(--cell-spacing);
+    top: 0;
 
     caption-side: top;
 
     background-color: var(--color-background);
 
-    outline: var(--cell-spacing) solid var(--spacing-color);
+    border: var(--cell-spacing) solid var(--spacing-color);
+    margin: calc(-1 * var(--cell-spacing)) 0;
 }
 
 main > table:only-child caption span {
     position: sticky;
-    left: var(--cell-padding);
+    left: calc(var(--cell-padding) + var(--cell-spacing));
 }
 
 main > table:only-child thead,
 main > table:only-child tfoot {
     position: sticky;
     z-index: 2;
+}
+
+main > table:only-child thead {
+    top: calc(var(--size-xl) + 2 * var(--cell-padding) + 1 * var(--cell-spacing));
+}
+
+main > table:only-child tfoot {
+    bottom: 0;
 }
 
 main > table:only-child thead th,
@@ -100,15 +109,6 @@ main > table:only-child tfoot td,
 main > table:only-child tbody th:first-child
 {
     outline: var(--cell-spacing) solid var(--spacing-color);
-}
-
-main > table:only-child thead {
-    top: calc(var(--size-xl) + 2 * var(--cell-padding) + 1 * var(--cell-spacing));
-    /* top: calc(var(--size-xl) + 2 * var(--cell-padding) - 1 * var(--cell-spacing)); /* weird safari positioning issue */
-}
-
-main > table:only-child tfoot {
-    bottom: 0;
 }
 
 main > table:only-child th:first-child {
