@@ -17,8 +17,8 @@ router.get('/table', (req, res) => {
 	res.render('experiments/table', { tables });
 });
 
-router.get('/typography', (req, res) => {
-	res.render('experiments/typography');
+router.get('/d3', (req, res) => {
+	res.render('experiments/d3');
 });
 
 module.exports = router;
