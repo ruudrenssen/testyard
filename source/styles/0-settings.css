@@ -14,7 +14,7 @@
 	--weight-semibold: 600;
 	--weight-bold: 700;
 
-	--size-default: clamp(0.975rem, 1vw, 1.125rem);
+	--size-default: clamp(0.875rem, 1vw, 1.25rem);
 	--size-s: calc(var(--size-default) / var(--factor));
 	--size-l: calc(var(--size-default) * var(--factor));
 	--size-xl: calc(var(--size-l) * var(--factor));
@@ -28,7 +28,7 @@
 	--size: var(--size-default);
 	--weight: var(--weight-regular);
 	--line-height: var(--factor);
-	--border-width: 1px;
+	--border-width: 2px;
 
 	/* Colors */
 	--hue: 15;
@@ -50,13 +50,13 @@
 
 	--color-action: var(--color);
 	--color-text: var(--dark);
-	--color-background: var(--light);
 	--color-border: var(--light-5);
+	--color-highlight: var(--color-alt);
+	--color-highlight-soft: var(--color-alt-semi);
+	--color-background: var(--light);
 	--color-section-1: var(--light-2);
 	--color-section-2: var(--light-3);
 	--color-section-3: var(--light-4);
-	--color-highlight: var(--color-alt);
-	--color-highlight-soft: var(--color-alt-semi);
 }
 
 * {

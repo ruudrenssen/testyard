@@ -73,7 +73,7 @@ main > table:only-child {
 main > table:only-child caption {
     position: sticky;
     z-index: 3;
-    top: 0;
+    top: var(--cell-spacing);
 
     caption-side: top;
 
