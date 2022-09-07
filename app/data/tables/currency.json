@@ -19,7 +19,7 @@
       "options": [
         {
           "value": "currency",
-          "title": "Currency",
+          "title": "Currency symbol",
           "options": {
             "currency": "EUR",
             "currencyDisplay": "symbol"
@@ -27,7 +27,7 @@
         },
         {
           "value": "currency",
-          "title": "Currency",
+          "title": "Currency narrow symbol",
           "options": {
             "currency": "EUR",
             "currencyDisplay": "narrowSymbol"
@@ -35,7 +35,7 @@
         },
         {
           "value": "currency",
-          "title": "Currency",
+          "title": "Currency code",
           "options": {
             "currency": "EUR",
             "currencyDisplay": "code"
@@ -43,7 +43,7 @@
         },
         {
           "value": "currency",
-          "title": "Currency",
+          "title": "Currency name",
           "options": {
             "currency": "EUR",
             "currencyDisplay": "name"
@@ -57,7 +57,7 @@
       "options": [
         {
           "value": "currency",
-          "title": "Currency",
+          "title": "Currency symbol",
           "options": {
             "currency": "JPY",
             "currencyDisplay": "symbol",
@@ -66,7 +66,7 @@
         },
         {
           "value": "currency",
-          "title": "Currency",
+          "title": "Currency narrow symbol",
           "options": {
             "currency": "JPY",
             "currencyDisplay": "narrowSymbol",
@@ -75,7 +75,7 @@
         },
         {
           "value": "currency",
-          "title": "Currency",
+          "title": "Currency code",
           "options": {
             "currency": "JPY",
             "currencyDisplay": "code",

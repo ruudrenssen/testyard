@@ -17,9 +17,9 @@ const getHeaders = function(options) {
     options.forEach(option => {
       if (option.options[0]?.options) {
         // has nested options
-        headers.push(...option.options.map(value => value.title));
+        headers.push(...option.options.map(value => `${value.title} `));
       } else {
-        headers.push(...option.options);
+        headers.push(...option.options.map(option => `${option} notation`));
       }
     });
 

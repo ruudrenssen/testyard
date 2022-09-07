@@ -1,15 +1,18 @@
 table {
-    /* --cell-spacing: var(--border-width); */
     --cell-spacing: var(--border-width);
     --cell-padding: calc(var(--factor) * var(--size) - var(--size));
     --line-height: var(--size-xl);
-    --spacing-color: var(--color-border);
+    --color-spacing: var(--color-border);
+    --color-thead-tfoot: var(--color-section-3);
+    --color-table-bg: var(--color-section-1);
+    --color-table-bg-alt: var(--color-section-2);
+    --color-caption-bg: var(--color-background);
 
     text-align: right;
     font-variant-numeric: tabular-nums;
 
     border-spacing: var(--cell-spacing);
-    background-color: var(--spacing-color);
+    background-color: var(--color-spacing);
 }
 
 caption {
@@ -25,18 +28,18 @@ caption {
 }
 
 colgroup {
-    background-color: var(--color-section-1);
+    background-color: var(--color-table-bg);
 }
 
 colgroup:nth-child(even) {
-    background-color: var(--color-section-2);
+    background-color: var(--color-table-bg-alt);
 }
 
 thead,
 tfoot {
     --weight: var(--weight-semibold);
 
-    background-color: var(--color-section-3);
+    background-color: var(--color-thead-tfoot);
 }
 
 tbody {
@@ -50,6 +53,10 @@ td {
     white-space: nowrap;
 }
 
+th {
+    text-transform: capitalize;
+}
+
 td {
     --family: var(--family-mono);
 }
@@ -60,7 +67,8 @@ th:first-child {
     text-align: left;
 }
 
-tbody tr:hover {
+tbody tr:hover th,
+tbody tr:hover td {
     background-color: var(--color-highlight-soft);
 }
 
@@ -74,13 +82,13 @@ table:only-child caption {
     position: sticky;
     z-index: 3;
     top: 0;
+    margin: calc(-1 * var(--cell-spacing)) 0;
 
     caption-side: top;
 
-    background-color: var(--color-background);
-
-    border: var(--cell-spacing) solid var(--spacing-color);
-    margin: calc(-1 * var(--cell-spacing)) 0;
+    background-color: var(--color-caption-bg);
+    border: var(--cell-spacing) solid var(--color-caption-bg);
+    border-bottom-color: var(--color-spacing);
 }
 
 table:only-child caption span {
@@ -108,7 +116,7 @@ table:only-child tfoot th,
 table:only-child tfoot td,
 table:only-child tbody th:first-child
 {
-    outline: var(--cell-spacing) solid var(--spacing-color);
+    outline: var(--cell-spacing) solid var(--color-spacing);
 }
 
 table:only-child th:first-child {
@@ -116,14 +124,14 @@ table:only-child th:first-child {
     z-index: 1;
     left: var(--cell-spacing);
 
-    background-color: var(--color-section-2);
+    background-color: var(--color-table-bg-alt);
 }
 
 table:only-child thead th:first-child,
 table:only-child tfoot th:first-child {
-    background-color: var(--color-section-3);
+    background-color: var(--color-thead-tfoot);
 }
 
 table:only-child tbody tr:hover th:first-child {
-    background: var(--color-section-2) linear-gradient(var(--color-highlight-soft), var(--color-highlight-soft));
+    background: var(--color-table-bg-alt) linear-gradient(var(--color-highlight-soft), var(--color-highlight-soft)); /* Set solid background color and add semi transparent overlay */
 }
