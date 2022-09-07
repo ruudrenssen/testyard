@@ -1,5 +1,6 @@
-// import debounce from 'lodash.debounce';
+import AdvancedTable from './modules/advanced-table.mjs';
 
-import Test from './modules/test.mjs';
-
-Test.hello();
+const tableEl = document.querySelector("table[data-module='table']");
+if(tableEl) {
+  const advancedTable = new AdvancedTable(tableEl);
+}
