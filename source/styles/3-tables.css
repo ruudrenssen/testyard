@@ -65,12 +65,12 @@ tbody tr:hover {
 }
 
 /* Sticky table */
-main > table:only-child {
+table:only-child {
     position: relative;
     width: 100%;
 }
 
-main > table:only-child caption {
+table:only-child caption {
     position: sticky;
     z-index: 3;
     top: 0;
@@ -83,35 +83,35 @@ main > table:only-child caption {
     margin: calc(-1 * var(--cell-spacing)) 0;
 }
 
-main > table:only-child caption span {
+table:only-child caption span {
     position: sticky;
     left: calc(var(--cell-padding) + var(--cell-spacing));
 }
 
-main > table:only-child thead,
-main > table:only-child tfoot {
+table:only-child thead,
+table:only-child tfoot {
     position: sticky;
     z-index: 2;
 }
 
-main > table:only-child thead {
+table:only-child thead {
     top: calc(var(--size-xl) + 2 * var(--cell-padding) + 1 * var(--cell-spacing));
 }
 
-main > table:only-child tfoot {
+table:only-child tfoot {
     bottom: 0;
 }
 
-main > table:only-child thead th,
-main > table:only-child thead td,
-main > table:only-child tfoot th,
-main > table:only-child tfoot td,
-main > table:only-child tbody th:first-child
+table:only-child thead th,
+table:only-child thead td,
+table:only-child tfoot th,
+table:only-child tfoot td,
+table:only-child tbody th:first-child
 {
     outline: var(--cell-spacing) solid var(--spacing-color);
 }
 
-main > table:only-child th:first-child {
+table:only-child th:first-child {
     position: sticky;
     z-index: 1;
     left: var(--cell-spacing);
@@ -119,11 +119,11 @@ main > table:only-child th:first-child {
     background-color: var(--color-section-2);
 }
 
-main > table:only-child thead th:first-child,
-main > table:only-child tfoot th:first-child {
+table:only-child thead th:first-child,
+table:only-child tfoot th:first-child {
     background-color: var(--color-section-3);
 }
 
-main > table:only-child tbody tr:hover th:first-child {
+table:only-child tbody tr:hover th:first-child {
     background: var(--color-section-2) linear-gradient(var(--color-highlight-soft), var(--color-highlight-soft));
 }
