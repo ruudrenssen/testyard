@@ -1,14 +1,15 @@
 table {
     /* --cell-spacing: var(--border-width); */
     --cell-spacing: var(--border-width);
-    --cell-padding: var(--size-s);
+    --cell-padding: calc(var(--factor) * var(--size) - var(--size));
     --line-height: var(--size-xl);
+    --spacing-color: var(--color-border);
 
     text-align: right;
     font-variant-numeric: tabular-nums;
 
     border-spacing: var(--cell-spacing);
-    background-color: var(--color-background);
+    background-color: var(--spacing-color);
 }
 
 caption {
@@ -78,7 +79,7 @@ main > table:only-child caption {
 
     background-color: var(--color-background);
 
-    outline: var(--cell-spacing) solid var(--color-background);
+    outline: var(--cell-spacing) solid var(--spacing-color);
 }
 
 main > table:only-child caption span {
@@ -98,11 +99,12 @@ main > table:only-child tfoot th,
 main > table:only-child tfoot td,
 main > table:only-child tbody th:first-child
 {
-    outline: var(--cell-spacing) solid var(--color-background);
+    outline: var(--cell-spacing) solid var(--spacing-color);
 }
 
 main > table:only-child thead {
     top: calc(var(--size-xl) + 2 * var(--cell-padding) + 1 * var(--cell-spacing));
+    /* top: calc(var(--size-xl) + 2 * var(--cell-padding) - 1 * var(--cell-spacing)); /* weird safari positioning issue */
 }
 
 main > table:only-child tfoot {
