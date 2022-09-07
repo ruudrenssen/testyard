@@ -15,7 +15,6 @@ const getHeaders = function(options) {
     const headers = [];
 
     options.forEach(option => {
-      console.log(option);
       if (option.options[0]?.options) {
         // has nested options
         headers.push(...option.options.map(value => value.title));
