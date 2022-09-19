@@ -1,7 +1,7 @@
 const languageCultureList = require('../../data/tables/language-culture-names-list.json');
 const currencyModel = require('../../data/tables/currency.json');
 
-const tables = [];
+const data = [];
 
 const getColgroups = function (options) {
   const colgroups = [['col']]; // start with a colgroup for the first cell that serves as header
@@ -42,7 +42,7 @@ const buildTable = function (model) {
   table.body = rows.map(row => {
     const rowValues = [];
     const value = model.value;
-    
+
     rowValues.push([row]);
 
     model.options.forEach(option => {
@@ -68,6 +68,6 @@ const buildTable = function (model) {
   return table;
 }
 
-tables.push(buildTable(currencyModel));
+data.push(buildTable(currencyModel));
 
-module.exports = { tables };
+module.exports = { data: data };

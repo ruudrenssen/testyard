@@ -1,5 +1,6 @@
 const service = require('./experiments.service');
 const tableService = require('./table.service');
+const d3Service = require('./d3.service');
 
 const express = require('express');
 
@@ -12,13 +13,13 @@ router.get('/', (req, res) => {
 });
 
 router.get('/table', (req, res) => {
-	const { tables } = tableService;
+	const { data } = tableService;
 
-	res.render('experiments/table', { tables });
+	res.render('experiments/table', { data });
 });
 
 router.get('/d3', (req, res) => {
-	res.render('experiments/d3');
+  res.render('experiments/d3');
 });
 
 module.exports = router;
