@@ -1,5 +1,5 @@
 import AdvancedTable from './modules/advanced-table.mjs';
-import D3 from './modules/d3.mjs'
+import D3 from './modules/d3.mjs';
 
 const tableEl = document.querySelector("table[data-module='advanced-table']");
 if(tableEl) new AdvancedTable(tableEl);

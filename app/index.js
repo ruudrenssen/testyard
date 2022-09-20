@@ -1,5 +1,7 @@
-const app = require('./app');
+const app = require("./app");
 
-app.listen(9090, () => {
-	console.info('Serving on: http://localhost:9090');
+const portNumber = 9000;
+
+app.listen(portNumber, () => {
+  console.info(`Serving on: http://localhost:${portNumber}`);
 });

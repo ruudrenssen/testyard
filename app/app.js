@@ -11,10 +11,10 @@ app.use(express.static('static')); // serve static files
 
 app.set('views', path.join(__dirname, 'views')); // config views
 app.engine('handlebars', exphbs({
-    extname: 'handlebars',
-    defaultLayout: 'main',
-    layoutsDir: __dirname + '/layouts',
-    partialsDir: __dirname + '/partials'
+  extname: 'handlebars',
+  defaultLayout: 'main',
+  layoutsDir: __dirname + '/layouts',
+  partialsDir: __dirname + '/partials'
 }));
 app.set('view engine', 'handlebars');
 

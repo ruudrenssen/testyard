@@ -1,14 +1,15 @@
 {
-  "name": "giftshop",
+  "name": "testyard",
   "version": "0.1.0",
-  "description": "a NodeJS giftshop",
+  "description": "a place to experiment",
   "scripts": {
     "start": "npm run server",
     "dev": "run-p watch",
     "server": "node ./app",
     "clean": "npx rimraf ./static/**/*",
     "lint": "run-p lint:*",
-    "lint:scripts": "eslint ./app --ext js,json --fix",
+    "lint:scripts": "eslint ./app --ext js --fix",
+    "lint:clientJs": "eslint ./source --ext mjs --fix",
     "lint:styles": "stylelint ./source/styles/**/*.css",
     "prebuild": "echo 'start prebuild' && run-p lint clean",
     "build": "run-p build:*",

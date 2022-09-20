@@ -1,30 +1,32 @@
-const languageCultureList = require('../../data/tables/language-culture-names-list.json');
-const currencyModel = require('../../data/tables/currency.json');
+const languageCultureList = require("../../data/tables/language-culture-names-list.json");
+const currencyModel = require("../../data/tables/currency.json");
 
 const data = [];
 
 const getColgroups = function (options) {
-  const colgroups = [['col']]; // start with a colgroup for the first cell that serves as header
+  const colgroups = [["col"]]; // start with a colgroup for the first cell that serves as header
 
-  options.forEach(option => colgroups.push(option.options.map(value => 'col')));
+  options.forEach((option) =>
+    colgroups.push(option.options.forEach((col) => col))
+  );
 
   return colgroups;
-}
+};
 
-const getHeaders = function(options) {
-    const headers = [];
+const getHeaders = function (options) {
+  const headers = [];
 
-    options.forEach(option => {
-      if (option.options[0]?.options) {
-        // has nested options
-        headers.push(...option.options.map(value => `${value.title} `));
-      } else {
-        headers.push(...option.options.map(option => `${option} notation`));
-      }
-    });
+  options.forEach((option) => {
+    if (option.options[0]?.options) {
+      // has nested options
+      headers.push(...option.options.map((value) => `${value.title} `));
+    } else {
+      headers.push(...option.options.map((option) => `${option} notation`));
+    }
+  });
 
-    return headers;
-}
+  return headers;
+};
 
 const buildTable = function (model) {
   const rows = languageCultureList;
@@ -36,37 +38,39 @@ const buildTable = function (model) {
     colgroups: getColgroups(model.options),
     header: getHeaders(model.options),
     body: undefined,
-    footer: undefined
-  }
+    footer: undefined,
+  };
 
-  table.body = rows.map(row => {
+  table.body = rows.map((row) => {
     const rowValues = [];
     const value = model.value;
 
     rowValues.push([row]);
 
-    model.options.forEach(option => {
-      rowValues.push(option.options.map(optionValue => {
-        const key = option.property;
+    model.options.forEach((option) => {
+      rowValues.push(
+        option.options.map((optionValue) => {
+          const key = option.property;
 
-        if (optionValue?.options) {
-          return new Intl.NumberFormat(row.cultureInfoCode, {
-            [key]: optionValue.value,
-            ...optionValue.options
-          }).format(value);
-        } else {
-          return new Intl.NumberFormat(row.cultureInfoCode, {
-            [key]: optionValue
-          }).format(value);
-        }
-      }));
+          if (optionValue?.options) {
+            return new Intl.NumberFormat(row.cultureInfoCode, {
+              [key]: optionValue.value,
+              ...optionValue.options,
+            }).format(value);
+          } else {
+            return new Intl.NumberFormat(row.cultureInfoCode, {
+              [key]: optionValue,
+            }).format(value);
+          }
+        })
+      );
     });
 
     return rowValues;
   });
 
   return table;
-}
+};
 
 data.push(buildTable(currencyModel));
 
