@@ -6,9 +6,7 @@ const data = [];
 const getColgroups = function (options) {
   const colgroups = [["col"]]; // start with a colgroup for the first cell that serves as header
 
-  options.forEach((option) =>
-    colgroups.push(option.options.forEach((col) => col))
-  );
+  options.forEach(option => colgroups.push(option.options.map(() => "col")));
 
   return colgroups;
 };

@@ -18,7 +18,7 @@ table {
 caption {
     --weight: var(--weight-semibold);
     --size: var(--size-l);
-    
+
     caption-side: top;
 
     margin: 0;
@@ -63,7 +63,7 @@ td {
 
 th:first-child {
     --weight: var(--weight-semibold);
-    
+
     text-align: left;
 }
 
