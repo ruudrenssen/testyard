@@ -8,7 +8,7 @@ class D3 {
   }
 
   async init() {
-    this.data = await D3.loadData("drivers");
+    this.data = await D3.loadData("Driver");
 
     D3.tabulate(this.element, this.data);
   }
@@ -30,30 +30,33 @@ class D3 {
     return table;
   }
 
-  static async loadData(url, offset = 0, limit = 100, data = []) {
+  static async loadData(category, offset = 0, limit = 100, data = []) {
     const requestOptions = {
       method: "GET",
       redirect: "follow"
-    }
+    };
 
-    const response = await fetch(`http://ergast.com/api/f1/${url}.json?limit=${limit}&offset=${offset}`, requestOptions)
+    const response = await fetch(`http://ergast.com/api/f1/${category}s.json?limit=${limit}&offset=${offset}`, requestOptions)
       .then((response) => response.json())
       .then((result) => result)
       .catch((error) => console.error("error", error));
 
     data = [
       ...data,
-      ...response.MRData.DriverTable.Drivers
-    ]
-
-    console.log(response.MRData);
+      ...response.MRData[`${category}Table`][`${category}s`]
+    ];
 
     if(Number(response.MRData.total) < limit + offset) {
       return data;
     } else {
+      await D3.delay(500); // rate limiter
       offset += limit;
-      return await D3.loadData(url, offset, limit, data);
+      return await D3.loadData(category, offset, limit, data);
     }
+  }
+
+  static async delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 }
 
