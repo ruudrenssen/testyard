@@ -8,29 +8,54 @@ class D3 {
   }
 
   async init() {
-    this.data = await D3.loadData("Driver");
+    this.data = await D3.loadData("Circuit");
 
     D3.tabulate(this.element, this.data);
   }
 
   static tabulate(element, data) {
     console.log(data);
-    const headers = ["a", "b", "c", "d"];
+    const columns = Object.keys(data[0]);
 
     let table = d3.select(element)
-      , thead = table.append("thead");
+        .append("table")
+      , caption = table.append("caption")
+      , thead = table.append("thead")
+      , tbody = table.append("tbody")
+      , tfoot = table.append("tfoot");
+
+    caption.append("span").text("Hallo");
 
     thead.append("tr")
       .selectAll("th")
-      .data(headers)
+      .data(columns)
       .enter()
       .append("th")
-      .text(function (headers) { return headers; });
+      .text(function (columns) { return columns; });
+
+    let rows = tbody.selectAll("tr")
+      .data(data)
+      .enter()
+      .append("tr");
+
+    rows.selectAll("td")
+      .data(function (row) {
+        return columns.map(function (column) {
+          return { column: column, value: row[column] };
+        });
+      })
+      .enter()
+      .append("td")
+      .text(function (d) {
+        return d.value;
+      });
 
     return table;
   }
 
   static async loadData(category, offset = 0, limit = 100, data = []) {
+    console.info("fetch data");
+
     const requestOptions = {
       method: "GET",
       redirect: "follow"
@@ -47,8 +72,10 @@ class D3 {
     ];
 
     if(Number(response.MRData.total) < limit + offset) {
+      console.info("finished loading", data);
       return data;
     } else {
+      console.info("fetch next set");
       await D3.delay(500); // rate limiter
       offset += limit;
       return await D3.loadData(category, offset, limit, data);
