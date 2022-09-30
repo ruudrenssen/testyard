@@ -106,7 +106,9 @@ table:only-child thead {
 	top: 0;
 }
 
-table:only-child caption + thead {
+table:only-child caption + thead,
+table:only-child colgroup + thead,
+table:only-child col + thead {
     top: calc(var(--size-xl) + 2 * var(--cell-padding) + 1 * var(--cell-spacing));
 }
 
@@ -123,12 +125,14 @@ table:only-child tbody th:first-child
     outline: var(--cell-spacing) solid var(--color-spacing);
 }
 
-table:only-child th:first-child {
+table:only-child tr > th:first-child,
+table:only-child tr > td:first-child {
     position: sticky;
     z-index: 1;
     left: var(--cell-spacing);
 
     background-color: var(--color-table-bg-alt);
+	outline: var(--cell-spacing) solid var(--color-spacing);
 }
 
 table:only-child thead th:first-child,

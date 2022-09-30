@@ -10,7 +10,7 @@ class D3 {
   }
 
   async init() {
-    this.data = await F1Data.loadData("Driver");
+    this.data = await F1Data.loadDrivers();
 
     D3.tabulate(this.element, this.data);
   }
