@@ -103,6 +103,10 @@ table:only-child tfoot {
 }
 
 table:only-child thead {
+	top: 0;
+}
+
+table:only-child caption + thead {
     top: calc(var(--size-xl) + 2 * var(--cell-padding) + 1 * var(--cell-spacing));
 }
 

@@ -1,5 +1,7 @@
 import * as d3 from "d3";
 
+import F1Data from "./f1-data.mjs";
+
 class D3 {
   constructor(element) {
     this.data = {};
@@ -8,7 +10,7 @@ class D3 {
   }
 
   async init() {
-    this.data = await D3.loadData("Circuit");
+    this.data = await F1Data.loadData("Driver");
 
     D3.tabulate(this.element, this.data);
   }
@@ -17,14 +19,18 @@ class D3 {
     console.log(data);
     const columns = Object.keys(data[0]);
 
-    let table = d3.select(element)
-        .append("table")
-      , caption = table.append("caption")
-      , thead = table.append("thead")
-      , tbody = table.append("tbody")
-      , tfoot = table.append("tfoot");
+    let table = d3.select(element).append("table")
+      ,caption = table.append("caption")
+      ,colgroup = table.append("colgroup")
+      ,thead = table.append("thead")
+      ,tbody = table.append("tbody");
 
-    caption.append("span").text("Hallo");
+    caption.append("span").text("Circuits");
+
+    colgroup.selectAll("col")
+      .data(columns)
+      .enter()
+      .append("col");
 
     thead.append("tr")
       .selectAll("th")
@@ -51,39 +57,6 @@ class D3 {
       });
 
     return table;
-  }
-
-  static async loadData(category, offset = 0, limit = 100, data = []) {
-    console.info("fetch data");
-
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow"
-    };
-
-    const response = await fetch(`http://ergast.com/api/f1/${category}s.json?limit=${limit}&offset=${offset}`, requestOptions)
-      .then((response) => response.json())
-      .then((result) => result)
-      .catch((error) => console.error("error", error));
-
-    data = [
-      ...data,
-      ...response.MRData[`${category}Table`][`${category}s`]
-    ];
-
-    if(Number(response.MRData.total) < limit + offset) {
-      console.info("finished loading", data);
-      return data;
-    } else {
-      console.info("fetch next set");
-      await D3.delay(500); // rate limiter
-      offset += limit;
-      return await D3.loadData(category, offset, limit, data);
-    }
-  }
-
-  static async delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
   }
 }
 
