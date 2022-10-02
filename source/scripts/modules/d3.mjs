@@ -10,13 +10,12 @@ class D3 {
   }
 
   async init() {
-    this.data = await F1Data.loadDrivers();
+    this.data = await F1Data.loadGP(2022, 17);
 
-    D3.tabulate(this.element, this.data);
+    console.log(JSON.stringify(this.data));
   }
 
   static tabulate(element, data) {
-    console.log(data);
     const columns = Object.keys(data[0]);
 
     let table = d3.select(element).append("table")
